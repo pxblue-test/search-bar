@@ -1,28 +1,191 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
+// Material-UI components
+import {
+  AppBar,
+  Button,
+  IconButton,
+  List,
+  ListItem,
+  ListItemText,
+  ListItemIcon,
+  TextField,
+  Toolbar,
+  Typography
+} from '@material-ui/core';
+
+// Material Icons
+import { Close, Error, Menu, MoreVert, Person, Search } from '@material-ui/icons';
+
+// Other
+import { withStyles } from '@material-ui/core/styles';
+import { listItems as presidents } from './list';
+
+
+class App extends React.Component {
+  constructor(props){
+    super(props);
+
+    this.state = {
+      list : presidents.reverse(),
+      searching: false,
+      query: ''
+    }
+  }
+
+  searchResults(){
+    const query = this.state.query.toLowerCase().trim();
+    return this.state.list.filter((item) => {
+      if(item.president.toLowerCase().trim().indexOf(query) >= 0){return true;}
+      if(item.party.toLowerCase().trim().indexOf(query) >= 0){return true;}
+      if(item.took_office.toLowerCase().trim().indexOf(query) >= 0){return true;}
+      return false;
+    });
+  }
+
+  render(){
+    const {classes} = this.props;
+    const results = this.searchResults();
+    const searchVisible = this.state.searching ? '' : ' ' + classes.hidden;
+    const navVisible = !this.state.searching ? '' : ' ' + classes.hidden;
+
+    return (      
+      <React.Fragment>
+        {/* Navigation Bar */}
+        <AppBar className={classes.appbar + navVisible} position="fixed">
+          <Toolbar className={classes.toolbar}>
+            <IconButton color="inherit" className={classes.toolbarButton}>
+              <Menu /> 
+            </IconButton>
+            <div style={{flex:1}}>
+              <Typography variant="h6" color="inherit" style={{lineHeight:'1'}}>
+                President
+              </Typography>
+              <Typography variant="body1" color="inherit" style={{lineHeight:'1'}}>
+                Leader of the Free World
+              </Typography>
+            </div>
+            <IconButton color="inherit" 
+              className={classes.toolbarButton}
+              onClick={() => {
+                if(this.searchInput){this.searchInput.focus()} 
+                this.setState({searching: true})
+              }}
+            >
+              <Search/> 
+            </IconButton>
+          </Toolbar>
+        </AppBar>
+
+        {/* Search Bar */}
+        <AppBar className={classes.appbar + ' ' + classes.searchbar + searchVisible}  position="fixed" color={'default'}>
+          <Toolbar className={classes.toolbar}>
+            <IconButton color="inherit" className={classes.toolbarButton} disabled>
+              <Search /> 
+            </IconButton>
+            <TextField 
+              inputRef={(input) => this.searchInput = input}
+              className={classes.searchfield} 
+              value={this.state.query} 
+              placeholder={'Search'}
+              onChange={(evt) => this.setState({query: evt.target.value})}
+              InputProps={{disableUnderline: true}}
+            />
+            <IconButton color="inherit" 
+              className={classes.toolbarButton}
+              onClick={() => this.setState({query: '', searching: false})}
+            >
+              <Close /> 
+            </IconButton>
+          </Toolbar>
+        </AppBar>
+
+        {/* List */}
+        <List className={classes.list}>
+          {results.map(function(item, index) {
+            return (
+              <ListItem key={`president_${index}`}>
+                <ListItemIcon>
+                  <Person />
+                </ListItemIcon>
+                <div>
+                  <ListItemText primary={item.president} secondary={item.party} />
+                  <ListItemText secondary={item.took_office} style={{paddingLeft: '0'}} />
+                </div>
+              </ListItem>
+            )}
+          )}
+          {results.length < 1 &&
+            <ListItem>
+              <ListItemIcon>
+                <Error />
+              </ListItemIcon>
+              <div>
+                <ListItemText primary={'0 results'} secondary={'No matching presidents'} />
+              </div>
+            </ListItem>
+          }
+        </List>
+      </React.Fragment>
+    )
   }
 }
 
-export default App;
+const styles = theme => ({
+  // appbar:{
+  //   transition: 'left 500ms ease-in-out',
+  //   left: '0',
+  //   '&$hidden':{
+  //     left: '100%'
+  //   },
+  //   '&:not($searchbar)':{
+  //     left: '0',
+  //     '&$hidden':{
+  //       left: '-100%'
+  //     }
+  //   }
+  // },
+  appbar:{
+    transition: 'all 250ms ease-in-out',
+    right: 0,
+    width: '100%',
+    '&$searchbar$hidden':{
+      width: 0
+    },
+    '&:not($searchbar)$hidden':{
+      opacity: 0
+    }
+  },
+  toolbarButton:{
+    padding: theme.spacing.unit * 2
+  },
+  toolbar:{
+    paddingRight: theme.spacing.unit * 0,
+    paddingLeft: theme.spacing.unit * 0,
+    [theme.breakpoints.up('sm')]:{
+      paddingLeft: theme.spacing.unit
+    }
+  },
+  searchbar:{
+    '& $toolbar':{
+      //paddingLeft: theme.spacing.unit * 3,
+      background: theme.palette.background.paper,
+      // [theme.breakpoints.down('xs')]:{
+      //   paddingLeft: theme.spacing.unit * 2.5
+      // }
+    }
+  },
+  hidden:{},
+  list:{
+    paddingTop: 0,
+    marginTop: theme.spacing.unit * 8,
+    [theme.breakpoints.down('xs')]:{
+      marginTop: theme.spacing.unit * 7
+    }
+  },
+  searchfield:{
+    flex: '1 1 0px'
+  }
+})
+
+export default (withStyles(styles)(App));
