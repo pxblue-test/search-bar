@@ -3,7 +3,6 @@ import React from 'react'
 // Material-UI components
 import {
   AppBar,
-  Button,
   IconButton,
   List,
   ListItem,
@@ -15,7 +14,7 @@ import {
 } from '@material-ui/core';
 
 // Material Icons
-import { Close, Error, Menu, MoreVert, Person, Search } from '@material-ui/icons';
+import { Close, Error, Menu, Person, Search } from '@material-ui/icons';
 
 // Other
 import { withStyles } from '@material-ui/core/styles';

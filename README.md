@@ -1,6 +1,7 @@
 # Search-bar
+[![CircleCI](https://circleci.com/gh/pxblue/search-bar/tree/react.svg?style=shield)](https://circleci.com/gh/pxblue/search-bar/tree/react)
 
-This is a sample application showing how to build a basic Search-bar. At the top of the page, the app bar has a search icon on right. When clicking on search icon search bar slides from right of the app bar.
+This is a sample application showing how to build a basic Search-bar. At the top of the page, the app bar has a search icon on the right. After clicking on the search icon, the search bar slides in from the right of the app bar.
 
 ## Running the example
 To run this example, first clone the repository. Each of our example projects comes with a branch for Angular and a branch for React. You can choose which branch to use when you clone the repository (or you can switch after cloning as well):
