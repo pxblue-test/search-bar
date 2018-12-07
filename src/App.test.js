@@ -21,26 +21,15 @@ it('filters search results correctly', () => {
     {"president":"ZZZ","took_office":"3333","party":"CCC"}
   ]});
   app.instance().setState({query:'x'});
-  let filtered = app.instance().searchResults();
-  expect(filtered.length).toEqual(1);
+    let filtered = app.instance().searchResults();
+    expect(filtered.length).toEqual(1);
   app.instance().setState({query:'z'});
-  filtered = app.instance().searchResults();
-  expect(filtered.length).toEqual(2);
+    filtered = app.instance().searchResults();
+    expect(filtered.length).toEqual(2);
   app.instance().setState({query:'1'});
-  filtered = app.instance().searchResults();
-  expect(filtered.length).toEqual(1);
+    filtered = app.instance().searchResults();
+    expect(filtered.length).toEqual(1);
   app.instance().setState({query:'m'});
-  filtered = app.instance().searchResults();
-  expect(filtered.length).toEqual(0);
+    filtered = app.instance().searchResults();
+    expect(filtered.length).toEqual(0);
 });
-
-
-function searchResults(){
-  const query = this.state.query.toLowerCase().trim();
-  return this.state.list.filter((item) => {
-    if(item.president.toLowerCase().trim().indexOf(query) >= 0){return true;}
-    if(item.party.toLowerCase().trim().indexOf(query) >= 0){return true;}
-    if(item.took_office.toLowerCase().trim().indexOf(query) >= 0){return true;}
-    return false;
-  });
-}
