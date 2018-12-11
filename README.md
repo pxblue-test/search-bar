@@ -1,27 +1,26 @@
-# SearchBar
+# Search-bar
+This is a sample application showing how to build a basic Search-bar. At the top of the page, the app bar has a search icon on the right. After clicking on the search icon, the search bar slides in from the right of the app bar.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.
+## Running the example
+To run this example, first clone the repository. Each of our example projects comes with a branch for Angular and a branch for React. You can choose which branch to use when you clone the repository (or you can switch after cloning as well):
 
-## Development server
+```
+git clone https://github.com/pxblue/search-bar -b Angular
+git clone https://github.com/pxblue/search-bar -b React
+```
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Navigate to the project directory and install the necessary dependencies (note: our projects are set up to be run with yarn):
 
-## Code scaffolding
+```
+cd search-bar
+yarn
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+You can then run the example - this will launch the application in your browser:
+```
+yarn start
+```
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+All of our code examples can also be found on [Stackblitz](http://www.stackblitz.com/@px-blue), which allows you to make changes to a project and see the updates to the rendered applciation in real-time.
+- [Angular](https://stackblitz.com/edit/pxblue-search-bar-angular)
+- [React](https://stackblitz.com/edit/pxblue-search-bar-react)
