@@ -7,6 +7,10 @@
 
 # dependencies
 /node_modules
+package-lock.json
+yarn.lock
+/.vscode
+/test-results
 
 # IDEs and editors
 /.idea
