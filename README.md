@@ -1,6 +1,7 @@
 # Search-bar
 [![CircleCI](https://circleci.com/gh/pxblue/search-bar/tree/angular.svg?style=shield)](https://circleci.com/gh/pxblue/search-bar/tree/angular)
 
+
 This is a sample application showing how to build a basic Search-bar. At the top of the page, the app bar has a search icon on the right. After clicking on the search icon, the search bar slides in from the right of the app bar.
 
 ## Running the example
