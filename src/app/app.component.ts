@@ -1,9 +1,4 @@
 import { Component, ViewChild, ElementRef } from '@angular/core';
-import { MatIconRegistry } from "@angular/material/icon";
-// import { DomSanitizer } from "@angular/platform-browser";
-// import { CdkScrollable, ScrollDispatcher } from '@angular/cdk/scrolling';
-import { map } from 'rxjs/operators';
-
 @Component({
   selector: 'my-app',
   templateUrl: './app.component.html',
@@ -58,10 +53,6 @@ export class AppComponent {
   {"number":45,"president":"Donald J. Trump","birth_year":1946,"death_year":null,"took_office":"2017-01-20","left_office":null,"party":"Republican"}
 ];
  @ViewChild('searchbar') searchbar:ElementRef;
-  // private readonly SHRINK_TOP_SCROLL_POSITION = 64;
-  // shrinkToolbar = false;
-  // scrollingSubscription: any;
-  // scrollTop: any;
   searchText = '';
  
   toggleSearch:boolean = false;
