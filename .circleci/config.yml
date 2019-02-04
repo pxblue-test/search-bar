@@ -1,13 +1,14 @@
 version: 2
 jobs:
   build:
-    working_directory: ~/search-bar
+    working_directory: ~/icon-navigation
     docker:
       - image: circleci/node:8
     steps:
       - checkout
-      - run: yarn install
+      - run: 
+          name: Install dependencies
+          command: yarn 
       - run:
-          
-          command: |
-            yarn run test
+          name: Test React 
+          command: yarn test
