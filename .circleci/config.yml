@@ -1,6 +1,6 @@
 version: 2
 jobs:
-  node:
+  build:
     working_directory: ~/search-bar
     docker:
       - image: circleci/node:7.4.0
