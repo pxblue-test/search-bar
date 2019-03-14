@@ -23,7 +23,10 @@
     "extends": "react-app"
   },
   "browserslist": [
-    "last 2 Chrome versions"
+    "last 2 Chrome versions",
+    "Firefox ESR",
+    "ie 7-11",
+    "edge 16"
   ],
   "devDependencies": {
     "chance": "^1.0.18",
