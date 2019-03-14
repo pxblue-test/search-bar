@@ -25,7 +25,7 @@
   "browserslist": [
     "last 2 Chrome versions",
     "Firefox ESR",
-    "ie 7-11",
+    "ie 11",
     "edge 16"
   ],
   "devDependencies": {
