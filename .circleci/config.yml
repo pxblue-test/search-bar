@@ -1,14 +1,18 @@
 version: 2
 jobs:
   build:
-    working_directory: ~/search-bar
-    docker:
-      - image: circleci/node:8
+    docker: 
+      - image: circleci/node:8.11-browsers
     steps:
       - checkout
-      - run: 
-          name: Install dependencies
-          command: yarn 
       - run:
-          name: Test React 
-          command: yarn test
+          name: Install Dependencies
+          command: yarn install
+      - run: yarn test
+      - run:
+          name: e2e cypress tests
+          command: yarn cytest
+      - store_artifacts:
+          path: cypress/videos
+      - store_artifacts:
+          path: cypress/screenshots

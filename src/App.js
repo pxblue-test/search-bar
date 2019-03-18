@@ -1,107 +1,120 @@
 import React from 'react'
-
+ 
 // Material-UI components
-import {
-  AppBar,
-  IconButton,
-  List,
-  ListItem,
-  ListItemText,
-  ListItemIcon,
-  TextField,
-  Toolbar,
-  Typography
-} from '@material-ui/core';
-
+// import {
+// AppBar,
+// IconButton,
+// List,
+// ListItem,
+// ListItemText,
+// ListItemIcon,
+// TextField,
+// Toolbar,
+// Typography
+// } from '@material-ui/core';
+import AppBar from '@material-ui/core/AppBar';
+import IconButton from '@material-ui/core/IconButton';
+import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemText from '@material-ui/core/ListItemText';
+import ListItemIcon from '@material-ui/core/ListItemIcon';
+import TextField from '@material-ui/core/TextField';
+import Toolbar from '@material-ui/core/Toolbar';
+import Typography from '@material-ui/core/Typography';
+ 
 // Material Icons
-import { Close, Error, Menu, Person, Search } from '@material-ui/icons';
-
+// import { Close, Error, Menu, Person, Search } from '@material-ui/icons';
+import Close from '@material-ui/icons/Close';
+import Error from '@material-ui/icons/Error';
+import Menu from '@material-ui/icons/Menu';
+import Person from '@material-ui/icons/Person';
+import Search from '@material-ui/icons/Search';
+ 
 // Other
 import { withStyles } from '@material-ui/core/styles';
 import { listItems as presidents } from './list';
 
-
 class App extends React.Component {
-  constructor(props){
+  constructor(props) {
     super(props);
 
     this.state = {
-      list : presidents.reverse(),
+      list: presidents.reverse(),
       searching: false,
       query: ''
     }
   }
 
-  searchResults(){
+  searchResults() {
     const query = this.state.query.toLowerCase().trim();
     return this.state.list.filter((item) => {
-      if(item.president.toLowerCase().trim().indexOf(query) >= 0){return true;}
-      if(item.party.toLowerCase().trim().indexOf(query) >= 0){return true;}
-      if(item.took_office.toLowerCase().trim().indexOf(query) >= 0){return true;}
+      if (item.president.toLowerCase().trim().indexOf(query) >= 0) { return true; }
+      if (item.party.toLowerCase().trim().indexOf(query) >= 0) { return true; }
+      if (item.took_office.toLowerCase().trim().indexOf(query) >= 0) { return true; }
       return false;
     });
   }
 
-  render(){
-    const {classes} = this.props;
+  render() {
+    const { classes } = this.props;
     const results = this.searchResults();
     const searchVisible = this.state.searching ? '' : ' ' + classes.hidden;
     const navVisible = !this.state.searching ? '' : ' ' + classes.hidden;
 
-    return (      
+    return (
       <React.Fragment>
         {/* Navigation Bar */}
-        <AppBar className={classes.appbar + navVisible} position="fixed">
+        <AppBar className={classes.appbar + navVisible} position="fixed" data-cy="pxb-toolbar">
           <Toolbar className={classes.toolbar}>
-            <IconButton color="inherit" className={classes.toolbarButton}>
-              <Menu /> 
+            <IconButton data-cy="menu" color="inherit" className={classes.toolbarButton}>
+              <Menu />
             </IconButton>
-            <div style={{flex:1}}>
-              <Typography variant="h6" color="inherit" style={{lineHeight:'1'}}>
+            <div style={{ flex: 1 }}>
+              <Typography variant="h6" color="inherit" style={{ lineHeight: '1' }}>
                 President
               </Typography>
-              <Typography variant="body1" color="inherit" style={{lineHeight:'1'}}>
+              <Typography variant="body1" color="inherit" style={{ lineHeight: '1' }}>
                 Leader of the Free World
               </Typography>
             </div>
-            <IconButton color="inherit" 
+            <IconButton data-cy="search-btn" color="inherit"
               className={classes.toolbarButton}
               onClick={() => {
-                if(this.searchInput){this.searchInput.focus()} 
-                this.setState({searching: true})
+                if (this.searchInput) { this.searchInput.focus() }
+                this.setState({ searching: true })
               }}
             >
-              <Search/> 
+              <Search />
             </IconButton>
           </Toolbar>
         </AppBar>
 
         {/* Search Bar */}
-        <AppBar className={classes.appbar + ' ' + classes.searchbar + searchVisible}  position="fixed" color={'default'}>
+        <AppBar className={classes.appbar + ' ' + classes.searchbar + searchVisible} position="fixed" color={'default'}>
           <Toolbar className={classes.toolbar}>
             <IconButton color="inherit" className={classes.toolbarButton} disabled>
-              <Search /> 
+              <Search />
             </IconButton>
-            <TextField 
+            <TextField
               inputRef={(input) => this.searchInput = input}
-              className={classes.searchfield} 
-              value={this.state.query} 
+              className={classes.searchfield}
+              value={this.state.query}
               placeholder={'Search'}
-              onChange={(evt) => this.setState({query: evt.target.value})}
-              InputProps={{disableUnderline: true}}
+              onChange={(evt) => this.setState({ query: evt.target.value })}
+              InputProps={{ disableUnderline: true }}
             />
-            <IconButton color="inherit" 
+            <IconButton color="inherit"
               className={classes.toolbarButton}
-              onClick={() => this.setState({query: '', searching: false})}
+              onClick={() => this.setState({ query: '', searching: false })}
             >
-              <Close /> 
+              <Close />
             </IconButton>
           </Toolbar>
         </AppBar>
 
         {/* List */}
         <List className={classes.list}>
-          {results.map(function(item, index) {
+          {results.map(function (item, index) {
             return (
               <ListItem key={`president_${index}`}>
                 <ListItemIcon>
@@ -109,10 +122,11 @@ class App extends React.Component {
                 </ListItemIcon>
                 <div>
                   <ListItemText primary={item.president} secondary={item.party} />
-                  <ListItemText secondary={item.took_office} style={{paddingLeft: '0'}} />
+                  <ListItemText secondary={item.took_office} style={{ paddingLeft: '0' }} />
                 </div>
               </ListItem>
-            )}
+            )
+          }
           )}
           {results.length < 1 &&
             <ListItem>
@@ -144,29 +158,29 @@ const styles = theme => ({
   //     }
   //   }
   // },
-  appbar:{
+  appbar: {
     transition: 'all 250ms ease-in-out',
     right: 0,
     width: '100%',
-    '&$searchbar$hidden':{
+    '&$searchbar$hidden': {
       width: 0
     },
-    '&:not($searchbar)$hidden':{
+    '&:not($searchbar)$hidden': {
       opacity: 0
     }
   },
-  toolbarButton:{
+  toolbarButton: {
     padding: theme.spacing.unit * 2
   },
-  toolbar:{
+  toolbar: {
     paddingRight: theme.spacing.unit * 0,
     paddingLeft: theme.spacing.unit * 0,
-    [theme.breakpoints.up('sm')]:{
+    [theme.breakpoints.up('sm')]: {
       paddingLeft: theme.spacing.unit
     }
   },
-  searchbar:{
-    '& $toolbar':{
+  searchbar: {
+    '& $toolbar': {
       //paddingLeft: theme.spacing.unit * 3,
       background: theme.palette.background.paper,
       // [theme.breakpoints.down('xs')]:{
@@ -174,15 +188,15 @@ const styles = theme => ({
       // }
     }
   },
-  hidden:{},
-  list:{
+  hidden: {},
+  list: {
     paddingTop: 0,
     marginTop: theme.spacing.unit * 8,
-    [theme.breakpoints.down('xs')]:{
+    [theme.breakpoints.down('xs')]: {
       marginTop: theme.spacing.unit * 7
     }
   },
-  searchfield:{
+  searchfield: {
     flex: '1 1 0px'
   }
 })
