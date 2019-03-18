@@ -29,7 +29,6 @@
     "edge 16"
   ],
   "devDependencies": {
-    "chance": "^1.0.18",
     "cypress": "^3.1.5",
     "enzyme": "^3.7.0",
     "enzyme-adapter-react-16": "^1.7.0",
