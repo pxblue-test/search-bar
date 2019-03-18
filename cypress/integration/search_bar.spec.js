@@ -1,6 +1,4 @@
 /// <reference types="cypress" />
-import Chance from 'chance';
-const chance = new Chance();
 
 describe('Angular search bar & search actions', () => {
 

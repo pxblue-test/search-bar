@@ -40,7 +40,6 @@
     "@types/jasmine": "~2.8.6",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",
-    "chance": "^1.0.18",
     "codelyzer": "~4.2.1",
     "cypress": "^3.2.0",
     "jasmine-core": "~2.99.1",
