@@ -25,8 +25,9 @@
   "browserslist": [
     "last 2 Chrome versions",
     "Firefox ESR",
-    "ie 11",
-    "edge 16"
+    "IE 11",
+    "Edge 16",
+    "Safari 11"
   ],
   "devDependencies": {
     "cypress": "^3.1.5",
