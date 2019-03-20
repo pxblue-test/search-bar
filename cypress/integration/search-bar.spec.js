@@ -1,6 +1,5 @@
 /// <reference types="cypress" />
-import Chance from 'chance';
-const chance = new Chance();
+
 
 describe('React search bar & search actions', () => {
 
