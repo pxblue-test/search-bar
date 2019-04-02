@@ -1,17 +1,5 @@
 import React from 'react'
  
-// Material-UI components
-// import {
-// AppBar,
-// IconButton,
-// List,
-// ListItem,
-// ListItemText,
-// ListItemIcon,
-// TextField,
-// Toolbar,
-// Typography
-// } from '@material-ui/core';
 import AppBar from '@material-ui/core/AppBar';
 import IconButton from '@material-ui/core/IconButton';
 import List from '@material-ui/core/List';
@@ -23,7 +11,6 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
  
 // Material Icons
-// import { Close, Error, Menu, Person, Search } from '@material-ui/icons';
 import Close from '@material-ui/icons/Close';
 import Error from '@material-ui/icons/Error';
 import Menu from '@material-ui/icons/Menu';
