@@ -10,7 +10,7 @@ import { listData } from './shared/list';
 })
 export class AppComponent {
   list = listData.reverse();
-  @ViewChild('searchbar') searchbar: ElementRef;
+  @ViewChild('searchbar', null) searchbar: ElementRef;
   searchText = '';
 
   toggleSearch: boolean = false;
