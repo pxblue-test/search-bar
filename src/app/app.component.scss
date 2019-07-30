@@ -24,5 +24,10 @@ header{
     border: 0;
     outline: none;
     padding-left: 10px;
+    &::-ms-clear {
+      height: 0;
+      width: 0;
+    }
   }
 }
+
