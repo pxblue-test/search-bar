@@ -173,6 +173,10 @@ const styles = theme => ({
       // [theme.breakpoints.down('xs')]:{
       //   paddingLeft: theme.spacing.unit * 2.5
       // }
+    },
+    '& ::-ms-clear':{
+      width: 0,
+      height: 0
     }
   },
   hidden: {},
