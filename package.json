@@ -29,6 +29,7 @@
     "@pxblue/themes": "^2.0.0",
     "core-js": "^2.5.4",
     "rxjs": "^6.2.2",
+    "typeface-open-sans": "^0.0.75",
     "zone.js": "~0.9.1"
   },
   "devDependencies": {
