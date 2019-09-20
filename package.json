@@ -30,7 +30,7 @@
     "Safari 11"
   ],
   "devDependencies": {
-    "cypress": "^3.1.5",
+    "cypress": "^3.4.1",
     "enzyme": "^3.7.0",
     "enzyme-adapter-react-16": "^1.7.0",
     "start-server-and-test": "^1.7.11"
