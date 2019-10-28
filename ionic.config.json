@@ -1,0 +1,7 @@
+{
+  "name": "pxblue-search-bar-ionic",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
