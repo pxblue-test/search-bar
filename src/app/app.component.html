@@ -1,3 +1,48 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-header [class.hidden]="toggleSearch">
+    <ion-toolbar>
+      <div color="primary" class="main-header" fxLayout="row" fxLayoutAlign="space-between">
+        <button mat-icon-button>
+          <mat-icon data-cy="menu">menu</mat-icon>
+        </button>
+        <div style="padding-left: 25px;flex:1">
+          <div class="mat-title">President</div>
+          <div class="sub-title">Leader of the Free World</div>
+        </div>
+        <button mat-icon-button flex="end" (click)="openSearch()">
+          <mat-icon>search</mat-icon>
+        </button>
+      </div>
+    </ion-toolbar>
+  </ion-header>
+  <ion-header style="background: #fff;" class="main-header search-block" [class.active]="toggleSearch">
+    <ion-toolbar style="background: #fff">
+      <div color="primary" class="main-header" fxLayout="row" fxLayoutAlign="space-between">
+        <button class="search-icon" mat-icon-button disabled>
+          <mat-icon>search</mat-icon>
+        </button>
+        <div style="padding-left: 25px;flex:1">
+          <input class="search-control" type="text" placeholder="Search" [(ngModel)]="searchText" #searchbar>
+        </div>
+        <button mat-button mat-icon-button (click)="searchClose()" style="color:rgba(0, 0, 0, 0.26)">
+          <mat-icon>close</mat-icon>
+        </button>
+      </div>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <mat-list class="data-list">
+      <mat-list-item [ngStyle]="{color: Colors.gray[800]}" *ngFor="let item of list | filter: searchText;">
+        <mat-icon mat-list-avatar [ngStyle]="{color: Colors.gray[400]}">person</mat-icon>
+        <div mat-line class="mat-small">{{item.president}}</div>
+        <div mat-line>{{item.party}}</div>
+        <div mat-line>{{item.took_office}}</div>
+      </mat-list-item>
+      <mat-list-item [ngStyle]="{color: Colors.black[900]}" *ngIf="(list | filter: searchText).length === 0">
+        <mat-icon mat-list-avatar [ngStyle]="{color: Colors.gray[400]}">error</mat-icon>
+        <div mat-line class="mat-small">0 results</div>
+        <div mat-line>No matching presidents</div>
+      </mat-list-item>
+    </mat-list>
+  </ion-content>
 </ion-app>
