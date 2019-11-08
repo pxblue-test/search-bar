@@ -3,9 +3,9 @@
     <ion-toolbar>
       <div color="primary" class="main-header" fxLayout="row" fxLayoutAlign="space-between">
         <button mat-icon-button>
-          <mat-icon data-cy="menu">menu</mat-icon>
+          <mat-icon class="menu-icon">menu</mat-icon>
         </button>
-        <div style="padding-left: 25px;flex:1">
+        <div class="title-wrapper">
           <div class="mat-title">President</div>
           <div class="sub-title">Leader of the Free World</div>
         </div>
@@ -15,13 +15,13 @@
       </div>
     </ion-toolbar>
   </ion-header>
-  <ion-header style="background: #fff;" class="main-header search-block" [class.active]="toggleSearch">
-    <ion-toolbar style="background: #fff">
+  <ion-header class="main-header search-block" [class.active]="toggleSearch">
+    <ion-toolbar class="search-toolbar">
       <div color="primary" class="main-header" fxLayout="row" fxLayoutAlign="space-between">
         <button class="search-icon" mat-icon-button disabled>
           <mat-icon>search</mat-icon>
         </button>
-        <div style="padding-left: 25px;flex:1">
+        <div class="title-wrapper">
           <input class="search-control" type="text" placeholder="Search" [(ngModel)]="searchText" #searchbar>
         </div>
         <button mat-button mat-icon-button (click)="searchClose()" style="color:rgba(0, 0, 0, 0.26)">
