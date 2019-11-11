@@ -9,9 +9,6 @@ import sampleData from './data';
 import AnimatedSearchBar from './AnimatedSearchBar';
 
 const MenuIcon = wrapIcon({ IconClass: MatIcon, name: 'menu' });
-// const SearchIcon = wrapIcon({ IconClass: MatIcon, name: 'search' });
-// const PersonIcon = wrapIcon({ IconClass: MatIcon, name: 'person', })
-// const InfoIcon = wrapIcon({ IconClass: MatIcon, name: 'info' });
 
 class App extends React.Component {
   constructor(props) {
@@ -45,9 +42,6 @@ class App extends React.Component {
           subtitle={'Leader of the Free world'}
           backgroundColor={Colors.blue[500]}
           navigation={{ icon: MenuIcon, onPress: () => { } }}
-          // actionItems={[
-          //   { icon: SearchIcon, onPress: this.onSearchToggle }
-          // ]}
           searchableConfig={{
             placeholder: 'Search',
             onChangeText: (q) => this.onSearchChange(q)
