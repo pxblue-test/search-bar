@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Animated, Dimensions } from 'react-native';
+import { StyleSheet, Animated, Dimensions, Easing } from 'react-native';
 import * as Colors from '@pxblue/colors'
 import { SearchBar, Icon } from 'react-native-elements';
 import { getStatusBarHeight } from 'react-native-status-bar-height';
@@ -14,10 +14,12 @@ class AnimatedSearchBar extends React.PureComponent {
     componentDidUpdate(prevProps) {
         if (this.props.show !== prevProps.show) {
             const bounceValue = this.props.show ? 0 : SCREEN_WIDTH;
-            Animated.spring(
+            Animated.timing(
                 this.state.bounceValue,
                 {
                     toValue: bounceValue,
+                    duration: 250,
+                    easing: Easing.linear
                 }
             ).start();
         }
@@ -34,13 +36,13 @@ class AnimatedSearchBar extends React.PureComponent {
                     {...props}
                     containerStyle={styles.searchBarContainerStyle}
                     inputStyle={{ color: Colors.black[500] }}
-                    inputContainerStyle={{ backgroundColor: Colors.white[50] }}
+                    inputContainerStyle={styles.inputContainerStyle}
                     placeholder='Search'
                     clearIcon={false}
                 />
                 <Icon
                     name='clear'
-                    size={20}
+                    size={24}
                     color={Colors.gray[500]}
                     iconStyle={styles.clearIcon}
                     onPress={onClear}
@@ -60,7 +62,7 @@ const styles = StyleSheet.create({
         width: '100%',
         position: 'absolute',
         backgroundColor: Colors.white[50],
-        paddingTop: getStatusBarHeight(true) + 5,
+        paddingTop: getStatusBarHeight(true) + 18,
         zIndex: 1,
         shadowColor: Colors.gray[500],
         shadowOffset: { width: 0, height: 2 },
@@ -74,6 +76,7 @@ const styles = StyleSheet.create({
         borderBottomWidth: 0,
         width: '90%',
     },
+    inputContainerStyle: { backgroundColor: Colors.white[50], borderRadius: 0 },
     clearIcon: {
         marginTop: 10,
     }

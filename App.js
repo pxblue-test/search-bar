@@ -1,22 +1,23 @@
 import React from 'react';
 import { StyleSheet, Text, View, FlatList } from 'react-native';
 import * as Colors from '@pxblue/colors'
-import { Header, ListItem } from 'react-native-elements';
+import { Header, wrapIcon } from '@pxblue/react-native-components';
+import MatIcon from 'react-native-vector-icons/MaterialIcons';
+import { ListItem } from 'react-native-elements';
 
 import sampleData from './data';
 import AnimatedSearchBar from './AnimatedSearchBar';
+
+const MenuIcon = wrapIcon({ IconClass: MatIcon, name: 'menu' });
+// const SearchIcon = wrapIcon({ IconClass: MatIcon, name: 'search' });
+// const PersonIcon = wrapIcon({ IconClass: MatIcon, name: 'person', })
+// const InfoIcon = wrapIcon({ IconClass: MatIcon, name: 'info' });
 
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = { showSearch: false, query: '', results: sampleData, data: sampleData };
   }
-  renderCenterComponent = () => (
-    <View style={{ alignItems: 'center' }}>
-      <Text style={{ color: Colors.white[50], fontSize: 20 }}>President</Text>
-      <Text style={{ color: Colors.white[50] }}>Leader of the Free World</Text>
-    </View>
-  );
 
   onSearchToggle = () => this.setState((prevState) => ({ showSearch: !prevState.showSearch }));
   onSearchChange = (query) => this.setState({ query }, this.onSearch)
@@ -40,17 +41,23 @@ class App extends React.Component {
     return (
       <View style={styles.container}>
         <Header
+          title={'President'}
+          subtitle={'Leader of the Free world'}
           backgroundColor={Colors.blue[500]}
-          centerComponent={this.renderCenterComponent()}
-          leftComponent={{ icon: 'menu', color: Colors.white[50] }}
-          rightComponent={{ icon: 'search', color: Colors.white[50], onPress: this.onSearchToggle }}
+          navigation={{ icon: MenuIcon, onPress: () => { } }}
+          // actionItems={[
+          //   { icon: SearchIcon, onPress: this.onSearchToggle }
+          // ]}
+          searchableConfig={{
+            placeholder: 'Search',
+            onChangeText: (q) => this.onSearchChange(q)
+          }}
         />
         <AnimatedSearchBar
           show={this.state.showSearch}
           value={this.state.query}
           onClear={this.onClear}
           onChangeText={this.onSearchChange}
-          showCancel
         />
         {
           this.state.results.length === 0
@@ -69,11 +76,12 @@ class App extends React.Component {
                 renderItem={({ item }) => (
                   <ListItem
                     title={item.president}
-                    subtitle={(<View>
+                    subtitle={(<View style={{ marginLeft: 15 }}>
                       <Text style={{ color: Colors.gray[500] }}>{item.party}</Text>
                       <Text style={{ color: Colors.gray[500] }}>{item.took_office}</Text>
                     </View>)}
-                    leftIcon={{ name: 'person', color: Colors.gray[500] }}
+                    titleStyle={{ marginLeft: 15 }}
+                    leftIcon={{ name: 'person', color: Colors.gray[500], iconStyle: { marginLeft: 3 } }}
                   />
                 )}
               />
