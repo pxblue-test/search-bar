@@ -56,6 +56,7 @@ class App extends React.Component {
             navigation={{ icon: MenuIcon, onPress: () => { } }}
             searchableConfig={{
               placeholder: 'Search',
+              autoFocus: true,
               onChangeText: (q) => this.onSearchChange(q)
             }}
           />
