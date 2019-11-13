@@ -1050,6 +1050,14 @@
     react-native-keyboard-aware-scroll-view "^0.8.0"
     react-native-status-bar-height "^2.3.1"
 
+"@pxblue/themes@^2.2.3":
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/@pxblue/themes/-/themes-2.2.3.tgz#2bfe06dbfa0c2d0ae8f82f5516a30df665aa291c"
+  integrity sha512-CNKleocaCqALkVQKw+s2Kuoc1wLndJ42xR42+dbSbd9/4m2D9KboY82rdpVi9LPK9cJmZ0EQ/EfueGti8U9xlQ==
+  dependencies:
+    "@pxblue/colors" "^1.0.13"
+    typeface-open-sans "^0.0.54"
+
 "@react-native-community/cli@^1.2.1":
   version "1.11.2"
   resolved "https://registry.yarnpkg.com/@react-native-community/cli/-/cli-1.11.2.tgz#b14967f24a389f5a16889a747345cf0e5757a2f1"
@@ -2802,7 +2810,7 @@ expo-file-system@~7.0.0:
   dependencies:
     uuid-js "^0.7.5"
 
-expo-font@~7.0.0:
+expo-font@^7.0.0, expo-font@~7.0.0:
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/expo-font/-/expo-font-7.0.0.tgz#0b36f5c91a77eb718fb20559b2c0c58d762ba535"
   integrity sha512-OVlUydfexjq1u57Xlymcx5egfFF2WZ5MXkg3GGjHyiSMfp09inZ7OzAu+O/TXjxjlaq9d6vBXiwVxqQoUIlx1Q==
@@ -7137,6 +7145,11 @@ typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
+
+typeface-open-sans@^0.0.54:
+  version "0.0.54"
+  resolved "https://registry.yarnpkg.com/typeface-open-sans/-/typeface-open-sans-0.0.54.tgz#20f5b5ea5c7f95d89dc1f8b2d2b1457680129cee"
+  integrity sha512-w6wOd6EicZdZKf0jSU/K3EzEi3zFgvWQSN7NOpRIQI5KeMWmC5Pg/lqtBVJHB0pRChYRmLdhf4h8ROur0A3JZQ==
 
 ua-parser-js@^0.7.18, ua-parser-js@^0.7.19:
   version "0.7.20"
