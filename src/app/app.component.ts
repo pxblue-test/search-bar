@@ -17,6 +17,7 @@ export class AppComponent {
   toggleSearch: any;
   Colors: Object = Colors;
   searchText: String = '';
+  @ViewChild('searchbar', { static: false }) searchbar: ElementRef;
 
   constructor(
     private platform: Platform,
@@ -35,6 +36,7 @@ export class AppComponent {
   }
   openSearch() {
     this.toggleSearch = true;
+    this.searchbar.nativeElement.focus();
   }
   searchClose() {
     this.toggleSearch = false;

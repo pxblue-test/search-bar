@@ -27,7 +27,7 @@ ion-header {
 
 .title-wrapper {
   flex: 1;
-  padding-left:28px; 
+  padding-left:32px; 
   z-index: 10;
   .mat-title,.sub-title {
     font-size: 16px;
@@ -36,15 +36,29 @@ ion-header {
     margin-bottom:2px;
   }
 }
-
+.ios {
+  .title-wrapper {
+    padding-left:28px; 
+  }
+  .search-block {
+    .title-wrapper {
+      padding-left:22px; 
+    }
+    .search-icon {
+      padding-left:14px;
+    }
+  }
+}
 .search-block {
   width: 0%;
   right: 0;
   &.active{
     width: 100%;
   }
-  .title-wrapper {
-    padding-left:22px; 
+  .search-icon {
+    width: auto;
+    padding-left:16px;
+    box-sizing: content-box; 
   }
   .search-control{
     flex: 1;
@@ -61,7 +75,7 @@ ion-header {
   }
 }
 .data-list {
-  margin-top: calc(80px);
+  margin-top: calc(50px);
   margin-top: calc(35px + constant(safe-area-inset-top));
   margin-top: calc(35px + env(safe-area-inset-top));
 }
