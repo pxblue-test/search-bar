@@ -1,10 +1,9 @@
 import React from 'react';
 import { StyleSheet, Text, View, FlatList, Platform } from 'react-native';
 import * as Colors from '@pxblue/colors'
-import { Header, wrapIcon } from '@pxblue/react-native-components';
+import { ThemeProvider, Header, wrapIcon, Body, Subtitle } from '@pxblue/react-native-components';
 import MatIcon from 'react-native-vector-icons/MaterialIcons';
 import { ListItem } from 'react-native-elements';
-import { ThemeProvider } from '@pxblue/react-native-components';
 import * as PXBThemes from '@pxblue/themes/react-native';
 import * as Font from 'expo-font';
 
@@ -65,7 +64,8 @@ class App extends React.Component {
               ? (
                 <ListItem
                   title="0 results"
-                  subtitle="No matching presidents"
+                  title={<Body style={{ marginLeft: 16 }} font={'semiBold'}>0 results</Body>}
+                  subtitle={<Subtitle style={{ marginLeft: 16 }} font={'regular'}>No matching presidents</Subtitle>}
                   titleStyle={{ marginLeft: 16 }}
                   subtitleStyle={{ color: Colors.gray[500], marginLeft: 16 }}
                   leftIcon={{ name: 'info', color: Colors.gray[500], iconStyle: { marginLeft: 3 } }}
@@ -77,10 +77,10 @@ class App extends React.Component {
                   keyExtractor={(item, index) => `${index}`}
                   renderItem={({ item }) => (
                     <ListItem
-                      title={item.president}
+                      title={<Body style={{ marginLeft: 16 }} font={'semiBold'}>{item.president}</Body>}
                       subtitle={(<View style={{ marginLeft: 16 }}>
-                        <Text style={{ color: Colors.gray[500] }}>{item.party}</Text>
-                        <Text style={{ color: Colors.gray[500] }}>{item.took_office}</Text>
+                        <Subtitle style={{ color: Colors.gray[500] }} font={'regular'}>{item.party}</Subtitle>
+                        <Subtitle style={{ color: Colors.gray[500] }} font={'regular'}>{item.took_office}</Subtitle>
                       </View>)}
                       titleStyle={{ marginLeft: 16 }}
                       leftIcon={{ name: 'person', color: Colors.gray[500], iconStyle: { marginLeft: 3 } }}
@@ -92,7 +92,7 @@ class App extends React.Component {
 
 
         </View>
-      </ThemeProvider>
+      </ThemeProvider >
     )
   }
 }
