@@ -1,82 +1,66 @@
+@import "~@pxblue/colors/palette.scss";
+
 ion-header {
   position: fixed;
   top: 0;
   z-index: 11;
-  transition: all 250ms ease-in-out;
-  &.main-header{
-    right: 0;
-    display: flex;
-    background: #fff;
-    &.hidden{
-      opacity: 0;
-    }
-    .search-toolbar {
-      background: #fff;
-    }
+}
+.slide{
+  right: 0;
+  width: 0;
+  background: map-get($pxb-white, 50);
+  transition: width 250ms ease-in-out;
+  &.active{
+    width: 100%;
+  }
+  .search-icon{
+    margin-left: 0;
+    margin-right: 32px;
+  }
+  ion-toolbar{
+    background:map-get($pxb-white, 50); 
   }
 }
-
+.header-content{
+  padding-left: 16px;
+  padding-right: 16px;
+}
 .menu-icon {
-  margin-left: 10px;
+  margin-right: 32px;
   height: 24px;
 }
 .search-icon {
-  margin-left: 10px;
-  margin-left: 0px;
+  margin-left: 16px;
+  height: 24px;
 }
-
 .title-wrapper {
   flex: 1;
-  padding-left:32px; 
   z-index: 10;
   .mat-title,.sub-title {
     font-size: 16px;
     text-align: left;
     line-height: 100%;
-    margin-bottom:2px;
+    margin-bottom:0;
   }
 }
-.ios {
-  .title-wrapper {
-    padding-left:28px; 
-  }
-  .search-block {
-    .title-wrapper {
-      padding-left:22px; 
-    }
-    .search-icon {
-      padding-left:14px;
-    }
-  }
-}
-.search-block {
-  width: 0%;
-  right: 0;
-  &.active{
-    width: 100%;
-  }
-  .search-icon {
-    width: auto;
-    padding-left:16px;
-    box-sizing: content-box; 
-  }
-  .search-control{
-    flex: 1;
-    font-size: 1rem;
-    border: 0;
-    outline: none;
-    height: 100%;
-    width: 100%;
-    color: #000;
-    &::-ms-clear {
-      height: 0;
-      width: 0;
-    }
+.search-control{
+  flex: 1;
+  font-size: 1rem;
+  border: 0;
+  padding: 0;
+  outline: none;
+  height: 100%;
+  width: 100%;
+  color: map-get($pxb-black, 500);
+  &::-ms-clear {
+    height: 0;
+    width: 0;
   }
 }
 .data-list {
-  margin-top: calc(50px);
-  margin-top: calc(35px + constant(safe-area-inset-top));
-  margin-top: calc(35px + env(safe-area-inset-top));
+  padding: 0;
+  margin-top: calc(56px);
+  margin-top: calc(56px + constant(safe-area-inset-top));
+  margin-top: calc(56px + env(safe-area-inset-top));
 }
 

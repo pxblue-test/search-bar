@@ -1,32 +1,32 @@
 <ion-app>
   <ion-header [class.hidden]="toggleSearch">
     <ion-toolbar>
-      <div color="primary" class="main-header" fxLayout="row" fxLayoutAlign="space-between">
-        <button mat-icon-button>
-          <mat-icon class="menu-icon">menu</mat-icon>
-        </button>
+      <div color="primary" class="header-content" fxLayout="row" fxLayoutAlign="start center">
+        <ion-button size="small" fill="clear" class="menu-icon">
+          <mat-icon>menu</mat-icon>
+        </ion-button>
         <div class="title-wrapper">
           <div class="mat-title">President</div>
           <div class="sub-title">Leader of the Free World</div>
         </div>
-        <button mat-icon-button flex="end" (click)="openSearch()">
+        <ion-button size="small" fill="clear" flex="end" (click)="openSearch()" class="search-icon">
           <mat-icon>search</mat-icon>
-        </button>
+        </ion-button>
       </div>
     </ion-toolbar>
   </ion-header>
-  <ion-header class="main-header search-block" [class.active]="toggleSearch">
+  <ion-header class="slide" [class.active]="toggleSearch">
     <ion-toolbar class="search-toolbar">
-      <div color="primary" class="main-header" fxLayout="row" fxLayoutAlign="space-between">
-        <button class="search-icon" mat-icon-button disabled>
+      <div color="primary" class="header-content" fxLayout="row" fxLayoutAlign="start center">
+        <ion-button size="small" fill="clear" class="search-icon" style="color:rgba(0, 0, 0, 0.26)">
           <mat-icon>search</mat-icon>
-        </button>
+        </ion-button>
         <div class="title-wrapper">
-          <input class="search-control" type="text" placeholder="Search" [(ngModel)]="searchText" #searchbar>
+          <input placeholder="Search" [(ngModel)]="searchText" class="search-control" #searchbar />
         </div>
-        <button mat-button mat-icon-button (click)="searchClose()" style="color:rgba(0, 0, 0, 0.26)">
+        <ion-button size="small" fill="clear" (click)="searchClose()" style="color:rgba(0, 0, 0, 0.26)">
           <mat-icon>close</mat-icon>
-        </button>
+        </ion-button>
       </div>
     </ion-toolbar>
   </ion-header>
