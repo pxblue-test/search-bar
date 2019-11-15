@@ -1,19 +1,36 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { ThemeProvider } from '@pxblue/react-native-components';
+import List from './List';
+import * as PXBThemes from '@pxblue/themes/react-native';
+import * as Font from 'expo-font';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-    </View>
-  );
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { fontLoaded: false };
+  }
+  async componentDidMount() {
+    await Font.loadAsync({
+      'OpenSans-Extrabold': require('./assets/fonts/OpenSans-ExtraBold.ttf'),
+      'OpenSans-Bold': require('./assets/fonts/OpenSans-Bold.ttf'),
+      'OpenSans-SemiBold': require('./assets/fonts/OpenSans-SemiBold.ttf'),
+      'OpenSans-Regular': require('./assets/fonts/OpenSans-Regular.ttf'),
+      'OpenSans-Light': require('./assets/fonts/OpenSans-Light.ttf'),
+    });
+
+    this.setState({ fontLoaded: true });
+  }
+
+  render() {
+    if (!this.state.fontLoaded) {
+      return null;
+    }
+    return (
+      <ThemeProvider theme={PXBThemes.blue}>
+        <List/>
+      </ThemeProvider>
+    )
+  }
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App;

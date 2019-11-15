@@ -1,0 +1,2208 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`List Tests  List Renders 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#ffffff",
+      "flex": 1,
+      "marginTop": 0,
+    }
+  }
+>
+  <RCTSafeAreaView
+    accessible={true}
+    emulateUnlessSupported={true}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "backgroundColor": "#6200EE",
+        "elevation": 0,
+        "height": 76,
+        "shadowColor": "rgba(0, 0, 0, 0.3)",
+        "shadowOffset": Object {
+          "height": 1,
+          "width": 0,
+        },
+        "shadowOpacity": 1,
+        "shadowRadius": 2,
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "flex": 1,
+          "flexDirection": "row",
+          "paddingBottom": 12,
+          "paddingHorizontal": 16,
+          "paddingTop": 16,
+        }
+      }
+    >
+      <View>
+        <View
+          accessible={true}
+          isTVSelectable={true}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "marginRight": 32,
+              "opacity": 1,
+            }
+          }
+          testID="header-navigation"
+        >
+          <Text />
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "flex": 1,
+            "flexDirection": "column",
+            "justifyContent": "flex-end",
+            "marginRight": 40,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "flex": 0,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Text
+            ellipsizeMode="tail"
+            numberOfLines={1}
+            style={
+              Object {
+                "color": "#FFFFFF",
+                "fontFamily": "System",
+                "fontSize": 20,
+                "lineHeight": 20,
+              }
+            }
+            testID="header-title"
+          >
+            President
+          </Text>
+          <Text
+            ellipsizeMode="tail"
+            numberOfLines={1}
+            style={
+              Object {
+                "color": "#FFFFFF",
+                "fontFamily": "System",
+                "fontSize": 18,
+                "lineHeight": 18,
+              }
+            }
+            testID="header-subtitle"
+          >
+            Leader of the Free world
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": 56,
+            "position": "absolute",
+            "right": 16,
+          }
+        }
+      >
+        <View>
+          <View
+            accessible={true}
+            isTVSelectable={true}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "opacity": 1,
+              }
+            }
+            testID="header-action-item0"
+          >
+            <Text
+              allowFontScaling={false}
+              style={
+                Array [
+                  Object {
+                    "color": "#FFFFFF",
+                    "fontSize": 24,
+                  },
+                  undefined,
+                  Object {
+                    "fontFamily": "Material Icons",
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                  },
+                  Object {},
+                ]
+              }
+              testID="icon"
+            >
+              
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+  </RCTSafeAreaView>
+  <RCTScrollView
+    data={
+      Array [
+        Object {
+          "birth_year": 1732,
+          "death_year": 1799,
+          "left_office": "1797-03-04",
+          "number": 1,
+          "party": "No Party",
+          "president": "George Washington",
+          "took_office": "1789-04-30",
+        },
+        Object {
+          "birth_year": 1735,
+          "death_year": 1826,
+          "left_office": "1801-03-04",
+          "number": 2,
+          "party": "Federalist",
+          "president": "John Adams",
+          "took_office": "1797-03-04",
+        },
+        Object {
+          "birth_year": 1743,
+          "death_year": 1826,
+          "left_office": "1809-03-04",
+          "number": 3,
+          "party": "Democratic-Republican",
+          "president": "Thomas Jefferson",
+          "took_office": "1801-03-04",
+        },
+        Object {
+          "birth_year": 1751,
+          "death_year": 1836,
+          "left_office": "1817-03-04",
+          "number": 4,
+          "party": "Democratic-Republican",
+          "president": "James Madison",
+          "took_office": "1809-03-04",
+        },
+        Object {
+          "birth_year": 1758,
+          "death_year": 1831,
+          "left_office": "1825-03-04",
+          "number": 5,
+          "party": "Democratic-Republican",
+          "president": "James Monroe",
+          "took_office": "1817-03-04",
+        },
+        Object {
+          "birth_year": 1767,
+          "death_year": 1848,
+          "left_office": "1829-03-04",
+          "number": 6,
+          "party": "Democratic-Republican",
+          "president": "John Quincy Adams",
+          "took_office": "1825-03-04",
+        },
+        Object {
+          "birth_year": 1767,
+          "death_year": 1845,
+          "left_office": "1837-03-04",
+          "number": 7,
+          "party": "Democratic",
+          "president": "Andrew Jackson",
+          "took_office": "1829-03-04",
+        },
+        Object {
+          "birth_year": 1782,
+          "death_year": 1862,
+          "left_office": "1841-03-04",
+          "number": 8,
+          "party": "Democratic",
+          "president": "Martin Van Buren",
+          "took_office": "1837-03-04",
+        },
+        Object {
+          "birth_year": 1773,
+          "death_year": 1841,
+          "left_office": "1841-04-04",
+          "number": 9,
+          "party": "Whig",
+          "president": "William Henry Harrison",
+          "took_office": "1841-03-04",
+        },
+        Object {
+          "birth_year": 1790,
+          "death_year": 1862,
+          "left_office": "1845-03-04",
+          "number": 10,
+          "party": "Whig",
+          "president": "John Tyler",
+          "took_office": "1841-04-04",
+        },
+        Object {
+          "birth_year": 1795,
+          "death_year": 1849,
+          "left_office": "1849-03-04",
+          "number": 11,
+          "party": "Democratic",
+          "president": "James K. Polk",
+          "took_office": "1845-03-04",
+        },
+        Object {
+          "birth_year": 1784,
+          "death_year": 1850,
+          "left_office": "1850-07-09",
+          "number": 12,
+          "party": "Whig",
+          "president": "Zachary Taylor",
+          "took_office": "1849-03-04",
+        },
+        Object {
+          "birth_year": 1800,
+          "death_year": 1874,
+          "left_office": "1853-03-04",
+          "number": 13,
+          "party": "Whig",
+          "president": "Millard Fillmore",
+          "took_office": "1850-07-09",
+        },
+        Object {
+          "birth_year": 1804,
+          "death_year": 1869,
+          "left_office": "1857-03-04",
+          "number": 14,
+          "party": "Democratic",
+          "president": "Franklin Pierce",
+          "took_office": "1853-03-04",
+        },
+        Object {
+          "birth_year": 1791,
+          "death_year": 1868,
+          "left_office": "1861-03-04",
+          "number": 15,
+          "party": "Democratic",
+          "president": "James Buchanan",
+          "took_office": "1857-03-04",
+        },
+        Object {
+          "birth_year": 1809,
+          "death_year": 1865,
+          "left_office": "1865-04-15",
+          "number": 16,
+          "party": "Republican",
+          "president": "Abraham Lincoln",
+          "took_office": "1861-03-04",
+        },
+        Object {
+          "birth_year": 1808,
+          "death_year": 1875,
+          "left_office": "1869-03-04",
+          "number": 17,
+          "party": "Democratic",
+          "president": "Andrew Johnson",
+          "took_office": "1865-04-15",
+        },
+        Object {
+          "birth_year": 1822,
+          "death_year": 1885,
+          "left_office": "1877-03-04",
+          "number": 18,
+          "party": "Republican",
+          "president": "Ulysses S. Grant",
+          "took_office": "1869-03-04",
+        },
+        Object {
+          "birth_year": 1822,
+          "death_year": 1893,
+          "left_office": "1881-03-04",
+          "number": 19,
+          "party": "Republican",
+          "president": "Rutherford B. Hayes",
+          "took_office": "1877-03-04",
+        },
+        Object {
+          "birth_year": 1831,
+          "death_year": 1881,
+          "left_office": "1881-09-19",
+          "number": 20,
+          "party": "Republican",
+          "president": "James A. Garfield",
+          "took_office": "1881-03-04",
+        },
+        Object {
+          "birth_year": 1829,
+          "death_year": 1886,
+          "left_office": "1885-03-04",
+          "number": 21,
+          "party": "Republican",
+          "president": "Chester A. Arthur",
+          "took_office": "1881-09-19",
+        },
+        Object {
+          "birth_year": 1837,
+          "death_year": 1908,
+          "left_office": "1889-03-04",
+          "number": 22,
+          "party": "Democratic",
+          "president": "Grover Cleveland",
+          "took_office": "1885-03-04",
+        },
+        Object {
+          "birth_year": 1833,
+          "death_year": 1901,
+          "left_office": "1893-03-04",
+          "number": 23,
+          "party": "Republican",
+          "president": "Benjamin Harrison",
+          "took_office": "1889-03-04",
+        },
+        Object {
+          "birth_year": 1837,
+          "death_year": 1908,
+          "left_office": "1897-03-04",
+          "number": 24,
+          "party": "Democratic",
+          "president": "Grover Cleveland",
+          "took_office": "1893-03-04",
+        },
+        Object {
+          "birth_year": 1843,
+          "death_year": 1901,
+          "left_office": "1901-09-14",
+          "number": 25,
+          "party": "Republican",
+          "president": "William McKinley",
+          "took_office": "1897-03-04",
+        },
+        Object {
+          "birth_year": 1858,
+          "death_year": 1919,
+          "left_office": "1909-03-04",
+          "number": 26,
+          "party": "Republican",
+          "president": "Theodore Roosevelt",
+          "took_office": "1901-09-14",
+        },
+        Object {
+          "birth_year": 1857,
+          "death_year": 1930,
+          "left_office": "1913-03-04",
+          "number": 27,
+          "party": "Republican",
+          "president": "William Howard Taft",
+          "took_office": "1909-03-04",
+        },
+        Object {
+          "birth_year": 1856,
+          "death_year": 1924,
+          "left_office": "1921-03-04",
+          "number": 28,
+          "party": "Democratic",
+          "president": "Woodrow Wilson",
+          "took_office": "1913-03-04",
+        },
+        Object {
+          "birth_year": 1865,
+          "death_year": 1923,
+          "left_office": "1923-08-02",
+          "number": 29,
+          "party": "Republican",
+          "president": "Warren G. Harding",
+          "took_office": "1921-03-04",
+        },
+        Object {
+          "birth_year": 1872,
+          "death_year": 1933,
+          "left_office": "1929-03-04",
+          "number": 30,
+          "party": "Republican",
+          "president": "Calvin Coolidge",
+          "took_office": "1923-08-02",
+        },
+        Object {
+          "birth_year": 1874,
+          "death_year": 1964,
+          "left_office": "1933-03-04",
+          "number": 31,
+          "party": "Republican",
+          "president": "Herbert Hoover",
+          "took_office": "1929-03-04",
+        },
+        Object {
+          "birth_year": 1882,
+          "death_year": 1945,
+          "left_office": "1945-04-12",
+          "number": 32,
+          "party": "Democratic",
+          "president": "Franklin D. Roosevelt",
+          "took_office": "1933-03-04",
+        },
+        Object {
+          "birth_year": 1884,
+          "death_year": 1972,
+          "left_office": "1953-01-20",
+          "number": 33,
+          "party": "Democratic",
+          "president": "Harry S. Truman",
+          "took_office": "1945-04-12",
+        },
+        Object {
+          "birth_year": 1890,
+          "death_year": 1969,
+          "left_office": "1961-01-20",
+          "number": 34,
+          "party": "Republican",
+          "president": "Dwight D. Eisenhower",
+          "took_office": "1953-01-20",
+        },
+        Object {
+          "birth_year": 1917,
+          "death_year": 1963,
+          "left_office": "1963-11-22",
+          "number": 35,
+          "party": "Democratic",
+          "president": "John F. Kennedy",
+          "took_office": "1961-01-20",
+        },
+        Object {
+          "birth_year": 1908,
+          "death_year": 1973,
+          "left_office": "1969-01-20",
+          "number": 36,
+          "party": "Democratic",
+          "president": "Lyndon B. Johnson",
+          "took_office": "1963-11-22",
+        },
+        Object {
+          "birth_year": 1913,
+          "death_year": 1994,
+          "left_office": "1974-08-09",
+          "number": 37,
+          "party": "Republican",
+          "president": "Richard Nixon",
+          "took_office": "1969-01-20",
+        },
+        Object {
+          "birth_year": 1913,
+          "death_year": 2006,
+          "left_office": "1977-01-20",
+          "number": 38,
+          "party": "Republican",
+          "president": "Gerald Ford",
+          "took_office": "1974-08-09",
+        },
+        Object {
+          "birth_year": 1924,
+          "death_year": null,
+          "left_office": "1981-01-20",
+          "number": 39,
+          "party": "Democratic",
+          "president": "Jimmy Carter",
+          "took_office": "1977-01-20",
+        },
+        Object {
+          "birth_year": 1911,
+          "death_year": 2004,
+          "left_office": "1989-01-20",
+          "number": 40,
+          "party": "Republican",
+          "president": "Ronald Reagan",
+          "took_office": "1981-01-20",
+        },
+        Object {
+          "birth_year": 1924,
+          "death_year": null,
+          "left_office": "1993-01-20",
+          "number": 41,
+          "party": "Republican",
+          "president": "George H. W. Bush",
+          "took_office": "1989-01-20",
+        },
+        Object {
+          "birth_year": 1946,
+          "death_year": null,
+          "left_office": "2001-01-20",
+          "number": 42,
+          "party": "Democratic",
+          "president": "Bill Clinton",
+          "took_office": "1993-01-20",
+        },
+        Object {
+          "birth_year": 1946,
+          "death_year": null,
+          "left_office": "2009-01-20",
+          "number": 43,
+          "party": "Republican",
+          "president": "George W. Bush",
+          "took_office": "2001-01-20",
+        },
+        Object {
+          "birth_year": 1961,
+          "death_year": null,
+          "left_office": "2017-01-20",
+          "number": 44,
+          "party": "Democratic",
+          "president": "Barack Obama",
+          "took_office": "2009-01-20",
+        },
+        Object {
+          "birth_year": 1946,
+          "death_year": null,
+          "left_office": null,
+          "number": 45,
+          "party": "Republican",
+          "president": "Donald J. Trump",
+          "took_office": "2017-01-20",
+        },
+      ]
+    }
+    disableVirtualization={false}
+    getItem={[Function]}
+    getItemCount={[Function]}
+    horizontal={false}
+    initialNumToRender={10}
+    keyExtractor={[Function]}
+    maxToRenderPerBatch={10}
+    numColumns={1}
+    onContentSizeChange={[Function]}
+    onEndReachedThreshold={2}
+    onLayout={[Function]}
+    onMomentumScrollEnd={[Function]}
+    onScroll={[Function]}
+    onScrollBeginDrag={[Function]}
+    onScrollEndDrag={[Function]}
+    removeClippedSubviews={false}
+    renderItem={[Function]}
+    scrollEventThrottle={50}
+    stickyHeaderIndices={Array []}
+    updateCellsBatchingPeriod={50}
+    viewabilityConfigCallbackPairs={Array []}
+    windowSize={21}
+  >
+    <View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View>
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "white",
+                "borderColor": "#bcbbc1",
+                "flexDirection": "row",
+                "padding": 14,
+              }
+            }
+          >
+            <View>
+              <View
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "transparent",
+                    "justifyContent": "center",
+                  }
+                }
+                theme={
+                  Object {
+                    "colors": Object {
+                      "disabled": "hsl(208, 8%, 90%)",
+                      "divider": "#bcbbc1",
+                      "error": "#ff190c",
+                      "grey0": "#393e42",
+                      "grey1": "#43484d",
+                      "grey2": "#5e6977",
+                      "grey3": "#86939e",
+                      "grey4": "#bdc6cf",
+                      "grey5": "#e1e8ee",
+                      "greyOutline": "#bbb",
+                      "platform": Object {
+                        "android": Object {
+                          "error": "#f44336",
+                          "primary": "#2196f3",
+                          "secondary": "#9C27B0",
+                          "success": "#4caf50",
+                          "warning": "#ffeb3b",
+                        },
+                        "ios": Object {
+                          "error": "#ff3b30",
+                          "primary": "#007aff",
+                          "secondary": "#5856d6",
+                          "success": "#4cd964",
+                          "warning": "#ffcc00",
+                        },
+                      },
+                      "primary": "#2089dc",
+                      "searchBg": "#303337",
+                      "secondary": "#8F0CE8",
+                      "success": "#52c41a",
+                      "warning": "#faad14",
+                    },
+                  }
+                }
+                underlayColor="white"
+              >
+                <Text />
+              </View>
+            </View>
+            <View
+              width={16}
+            />
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                  "justifyContent": "center",
+                }
+              }
+            >
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#000000",
+                    },
+                    Object {
+                      "fontFamily": "System",
+                      "fontSize": 16,
+                      "fontWeight": "400",
+                    },
+                    Object {
+                      "fontFamily": "System",
+                      "fontWeight": "600",
+                    },
+                    Object {
+                      "marginLeft": 16,
+                    },
+                  ]
+                }
+              >
+                George Washington
+              </Text>
+              <View
+                style={
+                  Object {
+                    "marginLeft": 16,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "color": "#000000",
+                      },
+                      Object {
+                        "fontFamily": "System",
+                        "fontSize": 14,
+                        "fontWeight": "600",
+                      },
+                      Object {
+                        "fontFamily": "System",
+                        "fontWeight": "400",
+                      },
+                      Object {
+                        "color": "#727e84",
+                      },
+                    ]
+                  }
+                >
+                  No Party
+                </Text>
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "color": "#000000",
+                      },
+                      Object {
+                        "fontFamily": "System",
+                        "fontSize": 14,
+                        "fontWeight": "600",
+                      },
+                      Object {
+                        "fontFamily": "System",
+                        "fontWeight": "400",
+                      },
+                      Object {
+                        "color": "#727e84",
+                      },
+                    ]
+                  }
+                >
+                  1789-04-30
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View>
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "white",
+                "borderColor": "#bcbbc1",
+                "flexDirection": "row",
+                "padding": 14,
+              }
+            }
+          >
+            <View>
+              <View
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "transparent",
+                    "justifyContent": "center",
+                  }
+                }
+                theme={
+                  Object {
+                    "colors": Object {
+                      "disabled": "hsl(208, 8%, 90%)",
+                      "divider": "#bcbbc1",
+                      "error": "#ff190c",
+                      "grey0": "#393e42",
+                      "grey1": "#43484d",
+                      "grey2": "#5e6977",
+                      "grey3": "#86939e",
+                      "grey4": "#bdc6cf",
+                      "grey5": "#e1e8ee",
+                      "greyOutline": "#bbb",
+                      "platform": Object {
+                        "android": Object {
+                          "error": "#f44336",
+                          "primary": "#2196f3",
+                          "secondary": "#9C27B0",
+                          "success": "#4caf50",
+                          "warning": "#ffeb3b",
+                        },
+                        "ios": Object {
+                          "error": "#ff3b30",
+                          "primary": "#007aff",
+                          "secondary": "#5856d6",
+                          "success": "#4cd964",
+                          "warning": "#ffcc00",
+                        },
+                      },
+                      "primary": "#2089dc",
+                      "searchBg": "#303337",
+                      "secondary": "#8F0CE8",
+                      "success": "#52c41a",
+                      "warning": "#faad14",
+                    },
+                  }
+                }
+                underlayColor="white"
+              >
+                <Text />
+              </View>
+            </View>
+            <View
+              width={16}
+            />
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                  "justifyContent": "center",
+                }
+              }
+            >
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#000000",
+                    },
+                    Object {
+                      "fontFamily": "System",
+                      "fontSize": 16,
+                      "fontWeight": "400",
+                    },
+                    Object {
+                      "fontFamily": "System",
+                      "fontWeight": "600",
+                    },
+                    Object {
+                      "marginLeft": 16,
+                    },
+                  ]
+                }
+              >
+                John Adams
+              </Text>
+              <View
+                style={
+                  Object {
+                    "marginLeft": 16,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "color": "#000000",
+                      },
+                      Object {
+                        "fontFamily": "System",
+                        "fontSize": 14,
+                        "fontWeight": "600",
+                      },
+                      Object {
+                        "fontFamily": "System",
+                        "fontWeight": "400",
+                      },
+                      Object {
+                        "color": "#727e84",
+                      },
+                    ]
+                  }
+                >
+                  Federalist
+                </Text>
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "color": "#000000",
+                      },
+                      Object {
+                        "fontFamily": "System",
+                        "fontSize": 14,
+                        "fontWeight": "600",
+                      },
+                      Object {
+                        "fontFamily": "System",
+                        "fontWeight": "400",
+                      },
+                      Object {
+                        "color": "#727e84",
+                      },
+                    ]
+                  }
+                >
+                  1797-03-04
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View>
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "white",
+                "borderColor": "#bcbbc1",
+                "flexDirection": "row",
+                "padding": 14,
+              }
+            }
+          >
+            <View>
+              <View
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "transparent",
+                    "justifyContent": "center",
+                  }
+                }
+                theme={
+                  Object {
+                    "colors": Object {
+                      "disabled": "hsl(208, 8%, 90%)",
+                      "divider": "#bcbbc1",
+                      "error": "#ff190c",
+                      "grey0": "#393e42",
+                      "grey1": "#43484d",
+                      "grey2": "#5e6977",
+                      "grey3": "#86939e",
+                      "grey4": "#bdc6cf",
+                      "grey5": "#e1e8ee",
+                      "greyOutline": "#bbb",
+                      "platform": Object {
+                        "android": Object {
+                          "error": "#f44336",
+                          "primary": "#2196f3",
+                          "secondary": "#9C27B0",
+                          "success": "#4caf50",
+                          "warning": "#ffeb3b",
+                        },
+                        "ios": Object {
+                          "error": "#ff3b30",
+                          "primary": "#007aff",
+                          "secondary": "#5856d6",
+                          "success": "#4cd964",
+                          "warning": "#ffcc00",
+                        },
+                      },
+                      "primary": "#2089dc",
+                      "searchBg": "#303337",
+                      "secondary": "#8F0CE8",
+                      "success": "#52c41a",
+                      "warning": "#faad14",
+                    },
+                  }
+                }
+                underlayColor="white"
+              >
+                <Text />
+              </View>
+            </View>
+            <View
+              width={16}
+            />
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                  "justifyContent": "center",
+                }
+              }
+            >
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#000000",
+                    },
+                    Object {
+                      "fontFamily": "System",
+                      "fontSize": 16,
+                      "fontWeight": "400",
+                    },
+                    Object {
+                      "fontFamily": "System",
+                      "fontWeight": "600",
+                    },
+                    Object {
+                      "marginLeft": 16,
+                    },
+                  ]
+                }
+              >
+                Thomas Jefferson
+              </Text>
+              <View
+                style={
+                  Object {
+                    "marginLeft": 16,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "color": "#000000",
+                      },
+                      Object {
+                        "fontFamily": "System",
+                        "fontSize": 14,
+                        "fontWeight": "600",
+                      },
+                      Object {
+                        "fontFamily": "System",
+                        "fontWeight": "400",
+                      },
+                      Object {
+                        "color": "#727e84",
+                      },
+                    ]
+                  }
+                >
+                  Democratic-Republican
+                </Text>
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "color": "#000000",
+                      },
+                      Object {
+                        "fontFamily": "System",
+                        "fontSize": 14,
+                        "fontWeight": "600",
+                      },
+                      Object {
+                        "fontFamily": "System",
+                        "fontWeight": "400",
+                      },
+                      Object {
+                        "color": "#727e84",
+                      },
+                    ]
+                  }
+                >
+                  1801-03-04
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View>
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "white",
+                "borderColor": "#bcbbc1",
+                "flexDirection": "row",
+                "padding": 14,
+              }
+            }
+          >
+            <View>
+              <View
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "transparent",
+                    "justifyContent": "center",
+                  }
+                }
+                theme={
+                  Object {
+                    "colors": Object {
+                      "disabled": "hsl(208, 8%, 90%)",
+                      "divider": "#bcbbc1",
+                      "error": "#ff190c",
+                      "grey0": "#393e42",
+                      "grey1": "#43484d",
+                      "grey2": "#5e6977",
+                      "grey3": "#86939e",
+                      "grey4": "#bdc6cf",
+                      "grey5": "#e1e8ee",
+                      "greyOutline": "#bbb",
+                      "platform": Object {
+                        "android": Object {
+                          "error": "#f44336",
+                          "primary": "#2196f3",
+                          "secondary": "#9C27B0",
+                          "success": "#4caf50",
+                          "warning": "#ffeb3b",
+                        },
+                        "ios": Object {
+                          "error": "#ff3b30",
+                          "primary": "#007aff",
+                          "secondary": "#5856d6",
+                          "success": "#4cd964",
+                          "warning": "#ffcc00",
+                        },
+                      },
+                      "primary": "#2089dc",
+                      "searchBg": "#303337",
+                      "secondary": "#8F0CE8",
+                      "success": "#52c41a",
+                      "warning": "#faad14",
+                    },
+                  }
+                }
+                underlayColor="white"
+              >
+                <Text />
+              </View>
+            </View>
+            <View
+              width={16}
+            />
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                  "justifyContent": "center",
+                }
+              }
+            >
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#000000",
+                    },
+                    Object {
+                      "fontFamily": "System",
+                      "fontSize": 16,
+                      "fontWeight": "400",
+                    },
+                    Object {
+                      "fontFamily": "System",
+                      "fontWeight": "600",
+                    },
+                    Object {
+                      "marginLeft": 16,
+                    },
+                  ]
+                }
+              >
+                James Madison
+              </Text>
+              <View
+                style={
+                  Object {
+                    "marginLeft": 16,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "color": "#000000",
+                      },
+                      Object {
+                        "fontFamily": "System",
+                        "fontSize": 14,
+                        "fontWeight": "600",
+                      },
+                      Object {
+                        "fontFamily": "System",
+                        "fontWeight": "400",
+                      },
+                      Object {
+                        "color": "#727e84",
+                      },
+                    ]
+                  }
+                >
+                  Democratic-Republican
+                </Text>
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "color": "#000000",
+                      },
+                      Object {
+                        "fontFamily": "System",
+                        "fontSize": 14,
+                        "fontWeight": "600",
+                      },
+                      Object {
+                        "fontFamily": "System",
+                        "fontWeight": "400",
+                      },
+                      Object {
+                        "color": "#727e84",
+                      },
+                    ]
+                  }
+                >
+                  1809-03-04
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View>
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "white",
+                "borderColor": "#bcbbc1",
+                "flexDirection": "row",
+                "padding": 14,
+              }
+            }
+          >
+            <View>
+              <View
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "transparent",
+                    "justifyContent": "center",
+                  }
+                }
+                theme={
+                  Object {
+                    "colors": Object {
+                      "disabled": "hsl(208, 8%, 90%)",
+                      "divider": "#bcbbc1",
+                      "error": "#ff190c",
+                      "grey0": "#393e42",
+                      "grey1": "#43484d",
+                      "grey2": "#5e6977",
+                      "grey3": "#86939e",
+                      "grey4": "#bdc6cf",
+                      "grey5": "#e1e8ee",
+                      "greyOutline": "#bbb",
+                      "platform": Object {
+                        "android": Object {
+                          "error": "#f44336",
+                          "primary": "#2196f3",
+                          "secondary": "#9C27B0",
+                          "success": "#4caf50",
+                          "warning": "#ffeb3b",
+                        },
+                        "ios": Object {
+                          "error": "#ff3b30",
+                          "primary": "#007aff",
+                          "secondary": "#5856d6",
+                          "success": "#4cd964",
+                          "warning": "#ffcc00",
+                        },
+                      },
+                      "primary": "#2089dc",
+                      "searchBg": "#303337",
+                      "secondary": "#8F0CE8",
+                      "success": "#52c41a",
+                      "warning": "#faad14",
+                    },
+                  }
+                }
+                underlayColor="white"
+              >
+                <Text />
+              </View>
+            </View>
+            <View
+              width={16}
+            />
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                  "justifyContent": "center",
+                }
+              }
+            >
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#000000",
+                    },
+                    Object {
+                      "fontFamily": "System",
+                      "fontSize": 16,
+                      "fontWeight": "400",
+                    },
+                    Object {
+                      "fontFamily": "System",
+                      "fontWeight": "600",
+                    },
+                    Object {
+                      "marginLeft": 16,
+                    },
+                  ]
+                }
+              >
+                James Monroe
+              </Text>
+              <View
+                style={
+                  Object {
+                    "marginLeft": 16,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "color": "#000000",
+                      },
+                      Object {
+                        "fontFamily": "System",
+                        "fontSize": 14,
+                        "fontWeight": "600",
+                      },
+                      Object {
+                        "fontFamily": "System",
+                        "fontWeight": "400",
+                      },
+                      Object {
+                        "color": "#727e84",
+                      },
+                    ]
+                  }
+                >
+                  Democratic-Republican
+                </Text>
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "color": "#000000",
+                      },
+                      Object {
+                        "fontFamily": "System",
+                        "fontSize": 14,
+                        "fontWeight": "600",
+                      },
+                      Object {
+                        "fontFamily": "System",
+                        "fontWeight": "400",
+                      },
+                      Object {
+                        "color": "#727e84",
+                      },
+                    ]
+                  }
+                >
+                  1817-03-04
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View>
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "white",
+                "borderColor": "#bcbbc1",
+                "flexDirection": "row",
+                "padding": 14,
+              }
+            }
+          >
+            <View>
+              <View
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "transparent",
+                    "justifyContent": "center",
+                  }
+                }
+                theme={
+                  Object {
+                    "colors": Object {
+                      "disabled": "hsl(208, 8%, 90%)",
+                      "divider": "#bcbbc1",
+                      "error": "#ff190c",
+                      "grey0": "#393e42",
+                      "grey1": "#43484d",
+                      "grey2": "#5e6977",
+                      "grey3": "#86939e",
+                      "grey4": "#bdc6cf",
+                      "grey5": "#e1e8ee",
+                      "greyOutline": "#bbb",
+                      "platform": Object {
+                        "android": Object {
+                          "error": "#f44336",
+                          "primary": "#2196f3",
+                          "secondary": "#9C27B0",
+                          "success": "#4caf50",
+                          "warning": "#ffeb3b",
+                        },
+                        "ios": Object {
+                          "error": "#ff3b30",
+                          "primary": "#007aff",
+                          "secondary": "#5856d6",
+                          "success": "#4cd964",
+                          "warning": "#ffcc00",
+                        },
+                      },
+                      "primary": "#2089dc",
+                      "searchBg": "#303337",
+                      "secondary": "#8F0CE8",
+                      "success": "#52c41a",
+                      "warning": "#faad14",
+                    },
+                  }
+                }
+                underlayColor="white"
+              >
+                <Text />
+              </View>
+            </View>
+            <View
+              width={16}
+            />
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                  "justifyContent": "center",
+                }
+              }
+            >
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#000000",
+                    },
+                    Object {
+                      "fontFamily": "System",
+                      "fontSize": 16,
+                      "fontWeight": "400",
+                    },
+                    Object {
+                      "fontFamily": "System",
+                      "fontWeight": "600",
+                    },
+                    Object {
+                      "marginLeft": 16,
+                    },
+                  ]
+                }
+              >
+                John Quincy Adams
+              </Text>
+              <View
+                style={
+                  Object {
+                    "marginLeft": 16,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "color": "#000000",
+                      },
+                      Object {
+                        "fontFamily": "System",
+                        "fontSize": 14,
+                        "fontWeight": "600",
+                      },
+                      Object {
+                        "fontFamily": "System",
+                        "fontWeight": "400",
+                      },
+                      Object {
+                        "color": "#727e84",
+                      },
+                    ]
+                  }
+                >
+                  Democratic-Republican
+                </Text>
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "color": "#000000",
+                      },
+                      Object {
+                        "fontFamily": "System",
+                        "fontSize": 14,
+                        "fontWeight": "600",
+                      },
+                      Object {
+                        "fontFamily": "System",
+                        "fontWeight": "400",
+                      },
+                      Object {
+                        "color": "#727e84",
+                      },
+                    ]
+                  }
+                >
+                  1825-03-04
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View>
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "white",
+                "borderColor": "#bcbbc1",
+                "flexDirection": "row",
+                "padding": 14,
+              }
+            }
+          >
+            <View>
+              <View
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "transparent",
+                    "justifyContent": "center",
+                  }
+                }
+                theme={
+                  Object {
+                    "colors": Object {
+                      "disabled": "hsl(208, 8%, 90%)",
+                      "divider": "#bcbbc1",
+                      "error": "#ff190c",
+                      "grey0": "#393e42",
+                      "grey1": "#43484d",
+                      "grey2": "#5e6977",
+                      "grey3": "#86939e",
+                      "grey4": "#bdc6cf",
+                      "grey5": "#e1e8ee",
+                      "greyOutline": "#bbb",
+                      "platform": Object {
+                        "android": Object {
+                          "error": "#f44336",
+                          "primary": "#2196f3",
+                          "secondary": "#9C27B0",
+                          "success": "#4caf50",
+                          "warning": "#ffeb3b",
+                        },
+                        "ios": Object {
+                          "error": "#ff3b30",
+                          "primary": "#007aff",
+                          "secondary": "#5856d6",
+                          "success": "#4cd964",
+                          "warning": "#ffcc00",
+                        },
+                      },
+                      "primary": "#2089dc",
+                      "searchBg": "#303337",
+                      "secondary": "#8F0CE8",
+                      "success": "#52c41a",
+                      "warning": "#faad14",
+                    },
+                  }
+                }
+                underlayColor="white"
+              >
+                <Text />
+              </View>
+            </View>
+            <View
+              width={16}
+            />
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                  "justifyContent": "center",
+                }
+              }
+            >
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#000000",
+                    },
+                    Object {
+                      "fontFamily": "System",
+                      "fontSize": 16,
+                      "fontWeight": "400",
+                    },
+                    Object {
+                      "fontFamily": "System",
+                      "fontWeight": "600",
+                    },
+                    Object {
+                      "marginLeft": 16,
+                    },
+                  ]
+                }
+              >
+                Andrew Jackson
+              </Text>
+              <View
+                style={
+                  Object {
+                    "marginLeft": 16,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "color": "#000000",
+                      },
+                      Object {
+                        "fontFamily": "System",
+                        "fontSize": 14,
+                        "fontWeight": "600",
+                      },
+                      Object {
+                        "fontFamily": "System",
+                        "fontWeight": "400",
+                      },
+                      Object {
+                        "color": "#727e84",
+                      },
+                    ]
+                  }
+                >
+                  Democratic
+                </Text>
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "color": "#000000",
+                      },
+                      Object {
+                        "fontFamily": "System",
+                        "fontSize": 14,
+                        "fontWeight": "600",
+                      },
+                      Object {
+                        "fontFamily": "System",
+                        "fontWeight": "400",
+                      },
+                      Object {
+                        "color": "#727e84",
+                      },
+                    ]
+                  }
+                >
+                  1829-03-04
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View>
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "white",
+                "borderColor": "#bcbbc1",
+                "flexDirection": "row",
+                "padding": 14,
+              }
+            }
+          >
+            <View>
+              <View
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "transparent",
+                    "justifyContent": "center",
+                  }
+                }
+                theme={
+                  Object {
+                    "colors": Object {
+                      "disabled": "hsl(208, 8%, 90%)",
+                      "divider": "#bcbbc1",
+                      "error": "#ff190c",
+                      "grey0": "#393e42",
+                      "grey1": "#43484d",
+                      "grey2": "#5e6977",
+                      "grey3": "#86939e",
+                      "grey4": "#bdc6cf",
+                      "grey5": "#e1e8ee",
+                      "greyOutline": "#bbb",
+                      "platform": Object {
+                        "android": Object {
+                          "error": "#f44336",
+                          "primary": "#2196f3",
+                          "secondary": "#9C27B0",
+                          "success": "#4caf50",
+                          "warning": "#ffeb3b",
+                        },
+                        "ios": Object {
+                          "error": "#ff3b30",
+                          "primary": "#007aff",
+                          "secondary": "#5856d6",
+                          "success": "#4cd964",
+                          "warning": "#ffcc00",
+                        },
+                      },
+                      "primary": "#2089dc",
+                      "searchBg": "#303337",
+                      "secondary": "#8F0CE8",
+                      "success": "#52c41a",
+                      "warning": "#faad14",
+                    },
+                  }
+                }
+                underlayColor="white"
+              >
+                <Text />
+              </View>
+            </View>
+            <View
+              width={16}
+            />
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                  "justifyContent": "center",
+                }
+              }
+            >
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#000000",
+                    },
+                    Object {
+                      "fontFamily": "System",
+                      "fontSize": 16,
+                      "fontWeight": "400",
+                    },
+                    Object {
+                      "fontFamily": "System",
+                      "fontWeight": "600",
+                    },
+                    Object {
+                      "marginLeft": 16,
+                    },
+                  ]
+                }
+              >
+                Martin Van Buren
+              </Text>
+              <View
+                style={
+                  Object {
+                    "marginLeft": 16,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "color": "#000000",
+                      },
+                      Object {
+                        "fontFamily": "System",
+                        "fontSize": 14,
+                        "fontWeight": "600",
+                      },
+                      Object {
+                        "fontFamily": "System",
+                        "fontWeight": "400",
+                      },
+                      Object {
+                        "color": "#727e84",
+                      },
+                    ]
+                  }
+                >
+                  Democratic
+                </Text>
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "color": "#000000",
+                      },
+                      Object {
+                        "fontFamily": "System",
+                        "fontSize": 14,
+                        "fontWeight": "600",
+                      },
+                      Object {
+                        "fontFamily": "System",
+                        "fontWeight": "400",
+                      },
+                      Object {
+                        "color": "#727e84",
+                      },
+                    ]
+                  }
+                >
+                  1837-03-04
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View>
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "white",
+                "borderColor": "#bcbbc1",
+                "flexDirection": "row",
+                "padding": 14,
+              }
+            }
+          >
+            <View>
+              <View
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "transparent",
+                    "justifyContent": "center",
+                  }
+                }
+                theme={
+                  Object {
+                    "colors": Object {
+                      "disabled": "hsl(208, 8%, 90%)",
+                      "divider": "#bcbbc1",
+                      "error": "#ff190c",
+                      "grey0": "#393e42",
+                      "grey1": "#43484d",
+                      "grey2": "#5e6977",
+                      "grey3": "#86939e",
+                      "grey4": "#bdc6cf",
+                      "grey5": "#e1e8ee",
+                      "greyOutline": "#bbb",
+                      "platform": Object {
+                        "android": Object {
+                          "error": "#f44336",
+                          "primary": "#2196f3",
+                          "secondary": "#9C27B0",
+                          "success": "#4caf50",
+                          "warning": "#ffeb3b",
+                        },
+                        "ios": Object {
+                          "error": "#ff3b30",
+                          "primary": "#007aff",
+                          "secondary": "#5856d6",
+                          "success": "#4cd964",
+                          "warning": "#ffcc00",
+                        },
+                      },
+                      "primary": "#2089dc",
+                      "searchBg": "#303337",
+                      "secondary": "#8F0CE8",
+                      "success": "#52c41a",
+                      "warning": "#faad14",
+                    },
+                  }
+                }
+                underlayColor="white"
+              >
+                <Text />
+              </View>
+            </View>
+            <View
+              width={16}
+            />
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                  "justifyContent": "center",
+                }
+              }
+            >
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#000000",
+                    },
+                    Object {
+                      "fontFamily": "System",
+                      "fontSize": 16,
+                      "fontWeight": "400",
+                    },
+                    Object {
+                      "fontFamily": "System",
+                      "fontWeight": "600",
+                    },
+                    Object {
+                      "marginLeft": 16,
+                    },
+                  ]
+                }
+              >
+                William Henry Harrison
+              </Text>
+              <View
+                style={
+                  Object {
+                    "marginLeft": 16,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "color": "#000000",
+                      },
+                      Object {
+                        "fontFamily": "System",
+                        "fontSize": 14,
+                        "fontWeight": "600",
+                      },
+                      Object {
+                        "fontFamily": "System",
+                        "fontWeight": "400",
+                      },
+                      Object {
+                        "color": "#727e84",
+                      },
+                    ]
+                  }
+                >
+                  Whig
+                </Text>
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "color": "#000000",
+                      },
+                      Object {
+                        "fontFamily": "System",
+                        "fontSize": 14,
+                        "fontWeight": "600",
+                      },
+                      Object {
+                        "fontFamily": "System",
+                        "fontWeight": "400",
+                      },
+                      Object {
+                        "color": "#727e84",
+                      },
+                    ]
+                  }
+                >
+                  1841-03-04
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View>
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "white",
+                "borderColor": "#bcbbc1",
+                "flexDirection": "row",
+                "padding": 14,
+              }
+            }
+          >
+            <View>
+              <View
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "transparent",
+                    "justifyContent": "center",
+                  }
+                }
+                theme={
+                  Object {
+                    "colors": Object {
+                      "disabled": "hsl(208, 8%, 90%)",
+                      "divider": "#bcbbc1",
+                      "error": "#ff190c",
+                      "grey0": "#393e42",
+                      "grey1": "#43484d",
+                      "grey2": "#5e6977",
+                      "grey3": "#86939e",
+                      "grey4": "#bdc6cf",
+                      "grey5": "#e1e8ee",
+                      "greyOutline": "#bbb",
+                      "platform": Object {
+                        "android": Object {
+                          "error": "#f44336",
+                          "primary": "#2196f3",
+                          "secondary": "#9C27B0",
+                          "success": "#4caf50",
+                          "warning": "#ffeb3b",
+                        },
+                        "ios": Object {
+                          "error": "#ff3b30",
+                          "primary": "#007aff",
+                          "secondary": "#5856d6",
+                          "success": "#4cd964",
+                          "warning": "#ffcc00",
+                        },
+                      },
+                      "primary": "#2089dc",
+                      "searchBg": "#303337",
+                      "secondary": "#8F0CE8",
+                      "success": "#52c41a",
+                      "warning": "#faad14",
+                    },
+                  }
+                }
+                underlayColor="white"
+              >
+                <Text />
+              </View>
+            </View>
+            <View
+              width={16}
+            />
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                  "justifyContent": "center",
+                }
+              }
+            >
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#000000",
+                    },
+                    Object {
+                      "fontFamily": "System",
+                      "fontSize": 16,
+                      "fontWeight": "400",
+                    },
+                    Object {
+                      "fontFamily": "System",
+                      "fontWeight": "600",
+                    },
+                    Object {
+                      "marginLeft": 16,
+                    },
+                  ]
+                }
+              >
+                John Tyler
+              </Text>
+              <View
+                style={
+                  Object {
+                    "marginLeft": 16,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "color": "#000000",
+                      },
+                      Object {
+                        "fontFamily": "System",
+                        "fontSize": 14,
+                        "fontWeight": "600",
+                      },
+                      Object {
+                        "fontFamily": "System",
+                        "fontWeight": "400",
+                      },
+                      Object {
+                        "color": "#727e84",
+                      },
+                    ]
+                  }
+                >
+                  Whig
+                </Text>
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "color": "#000000",
+                      },
+                      Object {
+                        "fontFamily": "System",
+                        "fontSize": 14,
+                        "fontWeight": "600",
+                      },
+                      Object {
+                        "fontFamily": "System",
+                        "fontWeight": "400",
+                      },
+                      Object {
+                        "color": "#727e84",
+                      },
+                    ]
+                  }
+                >
+                  1841-04-04
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "height": 0,
+          }
+        }
+      />
+    </View>
+  </RCTScrollView>
+</View>
+`;
