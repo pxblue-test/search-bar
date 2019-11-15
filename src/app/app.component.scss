@@ -1,0 +1,73 @@
+@import "~@pxblue/colors/palette.scss";
+
+ion-header {
+  position: fixed;
+  top: 0;
+  z-index: 11;
+}
+.slide{
+  right: 0;
+  width: 0;
+  background: map-get($pxb-white, 50);
+  transition: width 250ms ease-in-out;
+  &.active{
+    width: 100%;
+  }
+  .search-icon{
+    margin-left: 0;
+    margin-right: 32px;
+  }
+  ion-toolbar{
+    background:map-get($pxb-white, 50); 
+  }
+}
+.header-content{
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.menu-icon {
+  margin-right: 32px;
+  height: 24px;
+}
+.search-icon {
+  margin-left: 16px;
+  height: 24px;
+}
+.title-wrapper {
+  flex: 1;
+  z-index: 10;
+  .mat-title,.sub-title {
+    font-size: 16px;
+    text-align: left;
+    line-height: 100%;
+    margin-bottom:0;
+  }
+}
+.search-control{
+  flex: 1;
+  font-size: 1rem;
+  border: 0;
+  padding: 0;
+  outline: none;
+  height: 100%;
+  width: 100%;
+  color: map-get($pxb-black, 500);
+  &::-ms-clear {
+    height: 0;
+    width: 0;
+  }
+}
+.data-list {
+  padding: 0;
+  margin-top: calc(56px);
+  margin-top: calc(56px + constant(safe-area-inset-top));
+  margin-top: calc(56px + env(safe-area-inset-top));
+  [mat-list-item]{
+    color: map-get($pxb-black, 800);
+  }
+  [mat-list-avatar]{
+    line-height: 40px;
+    color: map-get($pxb-gray, 400);
+  }
+}
+

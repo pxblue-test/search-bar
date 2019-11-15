@@ -1,3 +1,48 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-header [class.hidden]="toggleSearch">
+    <ion-toolbar>
+      <div color="primary" class="header-content" fxLayout="row" fxLayoutAlign="start center">
+        <ion-button size="small" fill="clear" class="menu-icon">
+          <mat-icon>menu</mat-icon>
+        </ion-button>
+        <div class="title-wrapper">
+          <div class="mat-title">President</div>
+          <div class="sub-title">Leader of the Free World</div>
+        </div>
+        <ion-button size="small" fill="clear" flex="end" (click)="openSearch()" class="search-icon">
+          <mat-icon>search</mat-icon>
+        </ion-button>
+      </div>
+    </ion-toolbar>
+  </ion-header>
+  <ion-header class="slide" [class.active]="toggleSearch">
+    <ion-toolbar class="search-toolbar">
+      <div color="primary" class="header-content" fxLayout="row" fxLayoutAlign="start center">
+        <ion-button size="small" fill="clear" class="search-icon" style="color:rgba(0, 0, 0, 0.26)">
+          <mat-icon>search</mat-icon>
+        </ion-button>
+        <div class="title-wrapper">
+          <input placeholder="Search" [(ngModel)]="searchText" class="search-control" #searchbar />
+        </div>
+        <ion-button size="small" fill="clear" (click)="searchClose()" style="color:rgba(0, 0, 0, 0.26)">
+          <mat-icon>close</mat-icon>
+        </ion-button>
+      </div>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <mat-list class="data-list">
+      <mat-list-item *ngFor="let item of list | filter: searchText;">
+        <mat-icon mat-list-avatar>person</mat-icon>
+        <div mat-line class="mat-small">{{item.president}}</div>
+        <div mat-line>{{item.party}}</div>
+        <div mat-line>{{item.took_office}}</div>
+      </mat-list-item>
+      <mat-list-item *ngIf="(list | filter: searchText).length < 1">
+        <mat-icon mat-list-avatar>error</mat-icon>
+        <div mat-line class="mat-small">0 results</div>
+        <div mat-line>No matching presidents</div>
+      </mat-list-item>
+    </mat-list>
+  </ion-content>
 </ion-app>
