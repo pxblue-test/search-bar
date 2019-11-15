@@ -62,5 +62,12 @@ ion-header {
   margin-top: calc(56px);
   margin-top: calc(56px + constant(safe-area-inset-top));
   margin-top: calc(56px + env(safe-area-inset-top));
+  [mat-list-item]{
+    color: map-get($pxb-black, 800);
+  }
+  [mat-list-avatar]{
+    line-height: 40px;
+    color: map-get($pxb-gray, 400);
+  }
 }
 

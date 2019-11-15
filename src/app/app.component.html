@@ -32,14 +32,14 @@
   </ion-header>
   <ion-content>
     <mat-list class="data-list">
-      <mat-list-item [ngStyle]="{color: Colors.gray[800]}" *ngFor="let item of list | filter: searchText;">
-        <mat-icon mat-list-avatar [ngStyle]="{color: Colors.gray[400]}">person</mat-icon>
+      <mat-list-item *ngFor="let item of list | filter: searchText;">
+        <mat-icon mat-list-avatar>person</mat-icon>
         <div mat-line class="mat-small">{{item.president}}</div>
         <div mat-line>{{item.party}}</div>
         <div mat-line>{{item.took_office}}</div>
       </mat-list-item>
-      <mat-list-item [ngStyle]="{color: Colors.black[900]}" *ngIf="(list | filter: searchText).length === 0">
-        <mat-icon mat-list-avatar [ngStyle]="{color: Colors.gray[400]}">error</mat-icon>
+      <mat-list-item *ngIf="(list | filter: searchText).length < 1">
+        <mat-icon mat-list-avatar>error</mat-icon>
         <div mat-line class="mat-small">0 results</div>
         <div mat-line>No matching presidents</div>
       </mat-list-item>
