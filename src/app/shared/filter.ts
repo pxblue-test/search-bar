@@ -10,7 +10,7 @@ export class FilterPipe implements PipeTransform {
         if (!searchText) {
             return items;
         }
-        searchText = searchText.toLowerCase();
+        searchText = searchText.toLowerCase().trim();
         return items.filter(it => {
             return it.president.toLowerCase().includes(searchText) || it.party.toLowerCase().includes(searchText) || it.took_office.toLowerCase().includes(searchText);
         });
