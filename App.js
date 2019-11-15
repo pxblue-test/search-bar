@@ -12,7 +12,7 @@ class App extends React.Component {
   }
   async componentDidMount() {
     await Font.loadAsync({
-      'OpenSans-Extrabold': require('./assets/fonts/OpenSans-ExtraBold.ttf'),
+      'OpenSans-ExtraBold': require('./assets/fonts/OpenSans-ExtraBold.ttf'),
       'OpenSans-Bold': require('./assets/fonts/OpenSans-Bold.ttf'),
       'OpenSans-SemiBold': require('./assets/fonts/OpenSans-SemiBold.ttf'),
       'OpenSans-Regular': require('./assets/fonts/OpenSans-Regular.ttf'),
