@@ -6,7 +6,7 @@ This project demonstrates how to build a basic Search-bar. At the top of the pag
 | Angular | [![CircleCI](https://circleci.com/gh/pxblue/search-bar/tree/angular.svg?style=shield)](https://circleci.com/gh/pxblue/search-bar/tree/angular) | [View on Stackblitz](https://stackblitz.com/github/pxblue/search-bar/tree/angular)
 | React | [![CircleCI](https://circleci.com/gh/pxblue/search-bar/tree/react.svg?style=shield)](https://circleci.com/gh/pxblue/search-bar/tree/react) | [View on Code Sandbox](https://codesandbox.io/s/github/pxblue/search-bar/tree/react)
 | Ionic | [![CircleCI](https://circleci.com/gh/pxblue/search-bar/tree/ionic.svg?style=shield)](https://circleci.com/gh/pxblue/search-bar/tree/ionic) | [View on Stackblitz](https://stackblitz.com/github/pxblue/search-bar/tree/ionic)
-| React Native | [![CircleCI](https://circleci.com/gh/pxblue/search-bar/tree/reactnative.svg?style=shield)](https://circleci.com/gh/pxblue/search-bar/tree/reactnative) | [View on Snack](https://snack.expo.io/@git/github.com/pxblue/search-bar@reactnative)
+| React Native | [![CircleCI](https://circleci.com/gh/pxblue/search-bar/tree/reactnative.svg?style=shield)](https://circleci.com/gh/pxblue/search-bar/tree/reactnative) | [View on Snack](https://snack.expo.io/@git/github.com/pxblue/search-bar@reactnative?preview=true&platform=ios)
 
 ## Running the Example
 ### Angular
