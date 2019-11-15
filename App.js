@@ -1,7 +1,8 @@
 import React from 'react';
 import { ThemeProvider } from '@pxblue/react-native-components';
 import List from './List';
-import * as PXBThemes from '@pxblue/themes/react-native';
+import { ReactNativeThemes } from '@pxblue/themes';
+
 import * as Font from 'expo-font';
 
 class App extends React.Component {
@@ -26,7 +27,7 @@ class App extends React.Component {
       return null;
     }
     return (
-      <ThemeProvider theme={PXBThemes.blue}>
+      <ThemeProvider theme={ReactNativeThemes.blue}>
         <List/>
       </ThemeProvider>
     )

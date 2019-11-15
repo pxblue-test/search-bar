@@ -2,12 +2,12 @@ import React from 'react';
 import { StyleSheet, View, FlatList, Platform } from 'react-native';
 import * as Colors from '@pxblue/colors'
 import { Header, wrapIcon, Body, Subtitle } from '@pxblue/react-native-components';
-import MatIcon from 'react-native-vector-icons/MaterialIcons';
+import {Icon} from 'react-native-elements';
 import { ListItem } from 'react-native-elements';
 
 import sampleData from './data';
 
-const MenuIcon = wrapIcon({ IconClass: MatIcon, name: 'menu' });
+const MenuIcon = wrapIcon({IconClass: Icon, name:'menu'});
 
 class List extends React.Component {
   constructor(props) {
