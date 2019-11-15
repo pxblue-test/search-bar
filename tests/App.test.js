@@ -3,7 +3,7 @@ import renderer from 'react-test-renderer';
 import Enzyme, { shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 
-import App from '../App';
+import List from '../List';
 const data = [
     { "president": "XXX", "took_office": "1111", "party": "AAA" },
     { "president": "YYY", "took_office": "2222", "party": "ZZZ" },
@@ -12,16 +12,16 @@ const data = [
 
 Enzyme.configure({ adapter: new Adapter() })
 
-describe('App Tests ', function () {
-    it('App Renders', () => {
+describe('List Tests ', function () {
+    it('List Renders', () => {
         const tree = renderer.create(
-            <App />
+            <List />
         ).toJSON();
         console.log("tree", tree)
         expect(tree).toMatchSnapshot();
     });
     it('filters search results', () => {
-        const app = shallow(<App />);
+        const app = shallow(<List />);
         app.instance().setState({
             data,
             results: data,
