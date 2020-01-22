@@ -14,7 +14,7 @@
     "dependencies": {
         "@pxblue/colors": "^2.0.0",
         "@pxblue/react-native-components": "^2.0.2",
-        "@pxblue/themes": "^2.2.4",
+        "@pxblue/themes": "3.0.1-beta.0",
         "@types/react-native": "^0.61.0",
         "enzyme": "^3.10.0",
         "enzyme-adapter-react-16": "^1.15.1",

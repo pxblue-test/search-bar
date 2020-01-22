@@ -1070,6 +1070,14 @@
     react-native-keyboard-aware-scroll-view "^0.8.0"
     react-native-status-bar-height "^2.3.1"
 
+"@pxblue/themes@3.0.1-beta.0":
+  version "3.0.1-beta.0"
+  resolved "https://registry.yarnpkg.com/@pxblue/themes/-/themes-3.0.1-beta.0.tgz#590464e7f0c296a0255ba6ecc64da0471eab41d3"
+  integrity sha512-m5wExSKj2bYSSivPRmdPZhBQsllGIJgPq04VoB+QaVu+j7juQIWDA8PgvxEf+m9eC49a0i78lEzghtmhfEETuQ==
+  dependencies:
+    "@pxblue/colors" "^2.0.0"
+    typeface-open-sans "^0.0.54"
+
 "@react-native-community/cli@^1.2.1":
   version "1.11.2"
   resolved "https://registry.yarnpkg.com/@react-native-community/cli/-/cli-1.11.2.tgz#b14967f24a389f5a16889a747345cf0e5757a2f1"
@@ -7790,6 +7798,11 @@ typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
+
+typeface-open-sans@^0.0.54:
+  version "0.0.54"
+  resolved "https://registry.yarnpkg.com/typeface-open-sans/-/typeface-open-sans-0.0.54.tgz#20f5b5ea5c7f95d89dc1f8b2d2b1457680129cee"
+  integrity sha512-w6wOd6EicZdZKf0jSU/K3EzEi3zFgvWQSN7NOpRIQI5KeMWmC5Pg/lqtBVJHB0pRChYRmLdhf4h8ROur0A3JZQ==
 
 typescript@^3.7.3:
   version "3.7.5"
