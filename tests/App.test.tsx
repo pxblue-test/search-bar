@@ -1,3 +1,4 @@
+
 import React from 'react';
 import renderer from 'react-test-renderer';
 import Enzyme, { shallow } from 'enzyme';
@@ -5,9 +6,9 @@ import Adapter from 'enzyme-adapter-react-16';
 
 import List from '../List';
 const data = [
-    { "president": "XXX", "took_office": "1111", "party": "AAA" },
-    { "president": "YYY", "took_office": "2222", "party": "ZZZ" },
-    { "president": "ZZZ", "took_office": "3333", "party": "CCC" }
+    { "president": "XXX", "tookOffice": "1111", "party": "AAA", number: 1, birthYear: 1, deathYear: 1, leftOffice: ""},
+    { "president": "YYY", "tookOffice": "2222", "party": "ZZZ", number: 1, birthYear: 1, deathYear: 1, leftOffice: ""},
+    { "president": "ZZZ", "tookOffice": "3333", "party": "CCC", number: 1, birthYear: 1, deathYear: 1, leftOffice: ""}
 ]
 
 Enzyme.configure({ adapter: new Adapter() })
@@ -21,7 +22,7 @@ describe('List Tests ', function () {
         expect(tree).toMatchSnapshot();
     });
     it('filters search results', () => {
-        const app = shallow(<List />);
+        const app = shallow<List>(<List />);
         app.instance().setState({
             data,
             results: data,

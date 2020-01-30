@@ -3,7 +3,6 @@ import { StyleSheet, View, FlatList, Platform } from 'react-native';
 import * as Colors from '@pxblue/colors';
 import { Header, wrapIcon, Body, Subtitle } from '@pxblue/react-native-components';
 import { Icon, ListItem } from 'react-native-elements';
-
 import sampleData, { dataPoint } from './data';
 
 const MenuIcon = wrapIcon({ IconClass: Icon, name: 'menu' });
@@ -65,7 +64,12 @@ class List extends React.Component<PropType, StateType> {
                 <Header
                     title={'President'}
                     subtitle={'Leader of the Free world'}
-                    navigation={{ icon: MenuIcon, onPress: (): void => { /* your code here */} }}
+                    navigation={{
+                        icon: MenuIcon,
+                        onPress: (): void => {
+                            /* your code here */
+                        },
+                    }}
                     searchableConfig={{
                         placeholder: 'Search',
                         autoFocus: true,
@@ -92,7 +96,7 @@ class List extends React.Component<PropType, StateType> {
                 ) : (
                     <FlatList
                         data={this.state.results}
-                        keyExtractor={( _, index): string => `${index}`}
+                        keyExtractor={(_, index): string => `${index}`}
                         renderItem={({ item }): JSX.Element => (
                             <ListItem
                                 title={

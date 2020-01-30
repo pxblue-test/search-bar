@@ -1,8 +1,6 @@
 import React from 'react';
 import { ThemeProvider } from '@pxblue/react-native-components';
 import List from './List';
-
-//@ts-ignore
 import { ReactNativeThemes } from '@pxblue/themes';
 
 import * as Font from 'expo-font';
@@ -17,6 +15,8 @@ import semiBoldFont from './assets/fonts/OpenSans-SemiBold.ttf';
 import regularFont from './assets/fonts/OpenSans-Regular.ttf';
 //@ts-ignore
 import lightFont from './assets/fonts/OpenSans-Light.ttf';
+//@ts-ignore
+import MaterialIcons from '@expo/vector-icons/build/vendor/react-native-vector-icons/Fonts/MaterialIcons.ttf';
 
 type TProps = {};
 
@@ -35,7 +35,8 @@ class App extends React.Component<TProps, TState> {
             'OpenSans-Bold': boldFont,
             'OpenSans-SemiBold': semiBoldFont,
             'OpenSans-Regular': regularFont,
-            'OpenSans-Light': lightFont
+            'OpenSans-Light': lightFont,
+            'Material Icons': MaterialIcons,
         });
 
         this.setState({ fontLoaded: true });
